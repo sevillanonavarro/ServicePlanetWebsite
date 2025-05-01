@@ -15,7 +15,9 @@
     font-size: 20px;
     color: #ffffff;
   }
-  
+  .texto {
+    position: relative; /* Necesario para posicionar la línea dentro de este contenedor */
+  }
   /* título de sección */
   .Section-title {
     border-left: 3px solid #21829d;
