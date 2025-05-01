@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="MenuFooter.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <title>Service Planet Footer</title>
 </head>
 <body>
-    <!-- Bootstrap CSS -->
 
-
-<footer class="bg-dark text-light pt-5 pb-3" style="position: fixed; bottom: 0; width: 100%; z-index: 10;">
+<footer class="bg-dark text-light pt-5 pb-3 footer">
   <div class="container">
     <div class="row text-sm-start text-center">
 
       <!-- Logo y LinkedIn -->
       <div class="col-md-3 mb-4">
-        <img src="logo.png" alt="Service Planet Logo" class="mb-3" style="max-width: 120px;">
+        <img src="Sources/logo.png" alt="Service Planet Logo" class="footer-logo mb-3">
         <br>
         <a href="#" target="_blank" aria-label="LinkedIn">
-            <i class="bi bi-linkedin" style="font-size: 20px; color: #ffffff;"></i>
+          <i class="bi bi-linkedin LinkedIn-logo"></i>
         </a>
       </div>
 
-      <!-- Navigation -->
+      <!-- Secciones de enlaces -->
       <div class="col-md-2 mb-4">
-        <h6 class="text-white fw-bold" style="border-left: 3px solid #21829d; padding-left: 10px; margin-left: -13px;">NAVIGATION</h6>
+        <h6 class="Section-title text-white fw-bold">NAVIGATION</h6>
         <ul class="list-unstyled">
           <li><a href="#" class="text-light text-decoration-none">Home</a></li>
           <li><a href="#" class="text-light text-decoration-none">Lifecycle of Electronics</a></li>
@@ -35,9 +36,8 @@
         </ul>
       </div>
 
-      <!-- Resources -->
       <div class="col-md-2 mb-4">
-        <h6 class="text-white fw-bold" style="border-left: 3px solid #21829d; padding-left: 10px; margin-left: -13px;">RESOURCES</h6>
+        <h6 class="Section-title text-white fw-bold">RESOURCES</h6>
         <ul class="list-unstyled">
           <li><a href="#" class="text-light text-decoration-none">History</a></li>
           <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
@@ -46,38 +46,28 @@
         </ul>
       </div>
 
-      <!-- Contact -->
       <div class="col-md-2 mb-4">
-        <h6 class="text-white fw-bold" style="border-left: 3px solid #21829d; padding-left: 10px; margin-left: -13px;">CONTACT US</h6>
+        <h6 class="Section-title text-white fw-bold">CONTACT US</h6>
         <ul class="list-unstyled">
-          <li class="mb-1">
-            <span class="d-flex align-items-center">
-              <i class="bi bi-geo-alt-fill me-2"></i><strong>Postal Address:</strong>
-            </span>
-          </li>
-          <li style="margin-left: 23px;">Stuttgartstraat 8<br>3047 AS Rotterdam</li><br>
-          <li class="mb-1">
-            <span class="d-flex align-items-center">
-              <i class="bi bi-geo-alt-fill me-2"></i><strong>Goods Address:</strong>
-            </span>
-          </li>
-          <li style="margin-left: 23px;">Bristolstraat 7<br>3047 AB Rotterdam</li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Postal Address:</strong></li>
+          <li class="footer-Address">Stuttgartstraat 8<br>3047 AS Rotterdam</li><br>
+          <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Goods Address:</strong></li>
+          <li class="footer-Address">Bristolstraat 7<br>3047 AB Rotterdam</li>
         </ul>
       </div>
 
-      <!-- Telefono y email -->
-       <div class="col-md-2 mb-4"><br>
-        <p class="mb-1"><i class="bi bi-envelope-fill"></i> <strong>Email:</strong><br> <a href="mailto:info@ask.serviceplanet.nl" class="text-light text-decoration-none">info@ask.serviceplanet.nl</a></p><br>
-        <p class="mb-1"><i class="bi bi-telephone-fill"></i> <strong>Telephone:</strong><br> +31 10 4008200</p>
-       </div>
+      <div class="col-md-3 mb-4">
+        <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong><br>
+        <a href="mailto:info@ask.serviceplanet.nl" class="text-light text-decoration-none">info@ask.serviceplanet.nl</a></p>
+        <p><i class="bi bi-telephone-fill"></i> <strong>Telephone:</strong><br> +31 10 4008200</p>
+      </div>
+
     </div>
-    
 
     <hr class="border-secondary">
 
-    <!-- Bottom Bar -->
     <div class="d-flex flex-column flex-md-row justify-content-between text-secondary small">
-      <p class="mb-2 mb-md-0">Copyright © 2025 Service Planet. All Right Reserved</p>
+      <p class="mb-2 mb-md-0">© 2025 Service Planet. All Rights Reserved</p>
       <div>
         <a href="#" class="text-decoration-none text-secondary me-3">Terms and Conditions</a>
         <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
@@ -86,7 +76,5 @@
   </div>
 </footer>
 
-<!-- Bootstrap Icons (para los íconos) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
