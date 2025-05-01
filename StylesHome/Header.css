@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+
+  .top-bar-wrapper {
+    position: relative;
+    height: 40px;
+    z-index: 1;
+  }
+
+  .top-bar-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00A9E0;
+    clip-path: polygon(53% 0, 100% 0%, 100% 100%, 57% 100%);
+    z-index: -1;
+  }
+
+  .top-bar-inner {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    height: 100%;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: flex-start;
+    margin-left: 57vw;
+  }
+
+  .top-bar-inner a {
+    color: white;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .navbar-custom {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  /* NAV LINKS personalizados */
+  .navbar-nav .nav-link,
+  .navbar-nav .nav-link.dropdown-toggle {
+    font-weight: 600;
+    color: #333 !important;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .navbar-nav .nav-link::after,
+  .navbar-nav .nav-link.dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #00A9E0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link.dropdown-toggle:hover::after,
+  .navbar-nav .nav-link.dropdown-toggle.show::after {
+    transform: scaleX(1);
+  }
+  
+
+
+  .client-portal-btn {
+    background-color: #333;
+    color: white;
+    padding: 6px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    margin-left: 20%;
+    white-space: nowrap;
+    min-width: 180px;
+    justify-content: center;
+  }
+
+  .linkedin-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  #logoHead {
+    height: 100px;
+    margin-top: -50px;
+    transition: margin-top 0.3s ease;
+  }
+
+  .navbar-container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1000px) {
+    .navbar-toggler {
+      display: block;
+    }
+
+    .top-bar-inner {
+      font-size: 11px;
+      gap: 20px;
+    }
+
+    .navbar-collapse {
+      width: 100%;
+      background-color: #f7f7f7;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 8px 0;
+    }
+
+    .client-portal-btn {
+      margin-top: 10px;
+      width: 80%;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    .navbar-collapse.show {
+      display: flex;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .navbar-nav {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .top-bar-wrapper {
+      height: 50px;
+    }
+
+    .top-bar-inner {
+      font-size: 12px;
+      gap: 8px;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .client-portal-btn {
+      padding: 5px 14px;
+    }
+
+    .navbar-collapse.show .client-portal-btn {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
