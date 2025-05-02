@@ -47,7 +47,11 @@ body {
     padding: 10px 0;
     width: 100%;
   }
+  .nav-link {
+    display: flex;
 
+    max-width: 180px; /* opcional para que no se amontone */
+  }
   /* NAV LINKS personalizados */
   .navbar-nav .nav-link,
   .navbar-nav .nav-link.dropdown-toggle {
@@ -59,7 +63,6 @@ body {
     box-shadow: none !important;
     border: none !important;
   }
-
   .navbar-nav .nav-link::after,
   .navbar-nav .nav-link.dropdown-toggle::after {
     content: "";
@@ -82,6 +85,56 @@ body {
   }
   
 
+/* Estilo base del icono hamburguesa */
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+  outline: none;
+}
+.navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  background-color: black;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Animación al abrir: se convierte en X */
+.navbar-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
   .client-portal-btn {
     background-color: #333;
@@ -118,6 +171,119 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+/* Mostrar dropdown al hacer hover o click (Bootstrap usa .show para clicks) */
+/* Mostrar dropdown al hacer hover o click */
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.dropdown.show > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Dropdown principal tipo bloque vertical */
+.dropdown-menu.lifecycle-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 1px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 1000;
+
+  /* Animación */
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+/* Ítems del menú principal */
+.lifecycle-menu .dropdown-submenu {
+  position: relative;
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu .dropdown-submenu .sub-content li {
+  padding: 0;
+  height: 2rem;
+  align-items: center;
+  display: flex;
+}
+
+.dropdown-menu .dropdown-submenu .sub-content li:hover {
+  background-color: #f2f2f2;
+}
+
+.lifecycle-menu .dropdown-submenu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: block;
+  font-size: 14px;
+}
+
+.lifecycle-menu .dropdown-submenu:hover {
+  background-color: #f2f2f2;
+}
+
+/* Submenú lateral oculto con animación */
+.lifecycle-menu .has-sub .sub-content {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  padding: 10px 0;
+  width: 220px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+
+  /* Animación */
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Mostrar submenú lateral */
+.lifecycle-menu .has-sub:hover .sub-content {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Lista en submenú */
+.sub-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.sub-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sub-content li:last-child {
+  border-bottom: none;
+}
+
+.sub-content a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13.5px;
+}
+@media (max-width: 1000px) {}
 
   @media (max-width: 1000px) {
     .navbar-toggler {
@@ -177,6 +343,7 @@ body {
   }
 
   @media (max-width: 767px) {
+
     .top-bar-wrapper {
       height: 50px;
     }
