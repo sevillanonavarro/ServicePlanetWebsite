@@ -1,14 +1,17 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
 
   .top-bar-wrapper {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 40px;
-    z-index: 1;
+    z-index: 1002; /* más alto que la navbar para estar encima si es necesario */
   }
 
   .top-bar-wrapper::before {
@@ -36,17 +39,21 @@ body {
     justify-content: flex-start;
     margin-left: 57vw;
   }
-
   .top-bar-inner a {
     color: white;
     text-decoration: none;
     flex-shrink: 0;
   }
-
-  .navbar-custom {
-    padding: 10px 0;
-    width: 100%;
+  .navbar{
+    z-index: 300;
+    box-shadow: none;
   }
+  .navbar-custom {
+    position: relative; /* o static si prefieres */
+    width: 100%;
+    margin-top: 40px; /* compensa el espacio de la top-bar si es necesario */
+  }
+  
   .nav-link {
     display: flex;
 
@@ -160,9 +167,9 @@ body {
   #logoHead {
     height: 100px;
     margin-top: -50px;
-    transition: margin-top 0.3s ease;
+    position: relative;
+    z-index: 1100;
   }
-
   .navbar-container {
     width: 80%;
     max-width: 1400px;
@@ -283,13 +290,26 @@ body {
   color: #333;
   font-size: 13.5px;
 }
-@media (max-width: 1000px) {}
+.diagram{
 
-  @media (max-width: 1000px) {
+  animation: rotateAnimation 0.8s ease-in-out;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+  @media (max-width: 991px) {
     .navbar-toggler {
       display: block;
     }
-
+    
     .top-bar-inner {
       font-size: 11px;
       gap: 20px;
@@ -345,12 +365,21 @@ body {
   @media (max-width: 767px) {
 
     .top-bar-wrapper {
-      height: 50px;
-    }
+      height: 30px;
+      margin-left: 0;
 
+      
+    }
+    .top-bar-wrapper::before {
+
+      clip-path: polygon(40% 0, 100% 0%, 100% 100%, 50% 100%);
+
+    }
     .top-bar-inner {
-      font-size: 12px;
+      font-size: 2vw;
       gap: 8px;
+      overflow-x: auto; /* permite hacer scroll horizontal si es necesario */
+      margin-left: 45%;
     }
 
     .navbar-brand img {
@@ -366,3 +395,4 @@ body {
       margin-top: 20px;
     }
   }
+  

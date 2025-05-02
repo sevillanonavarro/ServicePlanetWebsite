@@ -1,0 +1,74 @@
+.section-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #199bbd;
+  clip-path: polygon(100% 100%, 100% 0%, 75% 0%, 60% 100%);
+  z-index: -1; /* Coloca la forma detrás de otros elementos */
+  pointer-events: none;
+}
+
+.logo-text {
+  font-size: clamp(18px, 1.4vw, 30px);
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+
+.line {
+  width: 30%;
+  height: 2px;
+  background-color: #00aaff;
+  flex-grow: 0;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 64px);
+  line-height: 1.2;
+  color: #333;
+}
+
+.highlight {
+  color: #33b4e5;
+  font-weight: 700;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #199bbd, #5cc8f4);
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: clamp(14px, 1.2vw, 18px);
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #138aad, #4fbde8);
+}
+
+@media (max-width: 768px) {
+  .background-shape {
+    clip-path: polygon(100% 100%, 100% 30%, 100% 30%, 0% 100%);
+  }
+
+  h1 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .line {
+    width: 50%;
+    margin-top: 0.75rem;
+  }
+}

@@ -3,6 +3,7 @@
     background-color: #212529;
     color: #ffffff;
     width: 100%;
+    z-index: 1;
   }
   
   /* logo */
