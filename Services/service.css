@@ -34,13 +34,31 @@ body {
   }
 
   .mid-line {
-    margin-top: -20px;
-    width: 2%;
+    position: absolute;
+    top: 0; /* la pega arriba */
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); /* centrada y rotada */
+    width: 80px; /* largo de la línea */
     height: 1px;
     background-color: #00aaff;
-    margin:  auto;
-    z-index: 0;
-    position: relative;
-    transform: rotate(90deg); /* Cambia el ángulo como quieras */
-    transform-origin: center; /* Rota desde el centro */
+    z-index: 1; /* por delante del fondo azul */ 
   }
+
+  .ver-line {
+    position: absolute;
+    right: -00px;       /* Separación desde el borde derecho del texto */
+    width: 500px;
+    height: 1px;
+    background-color: #00aaff;
+  }
+
+.img-service{
+    display: block;
+    max-width: 40vh;
+    height: auto;
+}
+
+.texto{
+    background-color: aquamarine;
+    
+}
