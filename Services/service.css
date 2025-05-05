@@ -14,6 +14,7 @@ body {
 
   .mid-line {
     position: absolute;
+    top: 0; /* la pega arriba */
     left: 50%;
     transform: translateX(-50%) rotate(90deg); /* centrada y rotada */
     width: 80px; /* largo de la línea */
