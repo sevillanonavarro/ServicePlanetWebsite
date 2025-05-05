@@ -1,0 +1,136 @@
+.award-section {
+    border-top: 2px solid rgb(204, 202, 202);
+    background-color: #fff;
+    padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+  }
+  
+  .award-text {
+    flex: 1;
+    max-width: 420px;
+  }
+  
+  .award-subtitle {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .award-text h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .award-text h2 span {
+    color: #3eb6f0;
+  }
+  
+  .blue-line {
+    width: 60px;
+    height: 3px;
+    background-color: #3eb6f0;
+    margin: 10px 0 20px;
+  }
+  
+  .arrows {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .arrows button {
+    border: none;
+    background-color: #f5f5f5;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: #3eb6f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .arrows button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .award-slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.award-slider::before,
+.award-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200px; /* Aumenté el valor para que el degradado sea más grande */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1),  rgba(255, 255, 255, 0)); /* Degradado de transparente a blanco */
+    z-index: 1;
+}
+
+.award-slider::before {
+    left: 0;
+    
+}
+
+.award-slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1),  rgba(255, 255, 255, 0));
+}
+  
+  .award-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .award-track img {
+    flex: 0 0 calc((100% - 80px) / 5); /* 4 gaps of 20px between 5 items */
+    height: 100px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .award-track img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .blue-line {
+        margin: 0 auto;
+      }
+    .award-section {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  
+    .award-text {
+      text-align: center;
+    }
+  
+    .award-slider {
+      margin-top: 30px;
+    }
+  
+    .arrows {
+      justify-content: center;
+    }
+    .containerTextCert{
+        padding: 0;
+    }
+  }
+  
