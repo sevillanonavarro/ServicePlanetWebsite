@@ -13,9 +13,9 @@
 <body>
 
 <!-- Hero Section -->
-<section class=" py-5 text-center position-relative overflow-hidden">
+<section class=" py-5 text-center position-relative overflow-hidden bg-white">
     <!-- FONDO AZUL -->
-    <div class="mid-line"></div>
+    
     <div class="background-shape"></div>
     
     <div class="container position-relative py-5">
@@ -30,7 +30,7 @@
         </div>
         <!-- Texto -->
         <div class="col-md-5 mb-4 mb-md-0 text-md-start">
-          <h1 class="fw-bold titulo-servicio">CYRIC <span class="text-primary">💧</span><div class="hor-line"></div></h1>
+          <h1 class="fw-bold titulo-servicio">CYRIC <img src="" /><div class="hor-line"></div></h1>
           <p class="text-muted Cyrictext">
             Glad you found our page about Cyric! We on behalf of Service Planet hope that you will find what you are looking for here.
             We try to provide you with additional knowledge about Cyric and the functionalities it offers through this page.
@@ -44,49 +44,63 @@
 </section>
 
 <!-- Features Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-      <div class="row g-4">
-        
-        <!-- What is Cyric -->
-        <div class="col-md-6">
-          <div class="p-5 bg-white  h-100 text-center text-md-start">
-            <img class="imagen-card" src="../Sources/Photos/castor.jfif" alt="icono"/>
-            <h4 class="fw-bold">WHAT IS CYRIC?</h4>
-            <p>Cyric is a toolset with 6 functionalities:</p>
-            <ul class="list-unstyled">
-              <li>✅ Hardware test</li>
-              <li>✅ Create image</li>
-              <li>✅ Restore image</li>
-              <li>✅ Malware scan</li>
-              <li>✅ Data vault</li>
-              <li>✅ Data wipe</li>
-            </ul>
-            <p class="text-muted">
-              The toolset supports the x86 platform. This includes most desktops and notebooks. The 6 functionalities are used throughout Europe in all kinds of different ways. Curious how you can use Cyric? Let's figure it out together!
-            </p>
-          </div>
+<section class=" bg-light seccion-tarjetas">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- WHAT IS CYRIC -->
+      <div class="col-md-6 position-relative">
+        <!-- Icono flotante -->
+        <div class="icon-circle cicle-izquierda">
+          <img src="../Sources/DetailServiceIcon1.png" alt="icono" />
         </div>
-  
-        <!-- Why Should I Use Cyric -->
-        <div class="col-md-6">
-          <div class="p-4 bg-white  h-100 text-center text-md-start">
-            <div class="mb-3 text-primary fs-3">💡</div>
-            <h4 class="fw-bold">WHY SHOULD I USE CYRIC?</h4>
-            <p class="text-muted">
-              Apart from the fact that research has shown that Cyric is much faster than the manual process, you also have the advantage that everything is registered. 
-              This provides clarity for yourself, your colleagues and your manager.
-            </p>
-            <p class="text-muted">
-              The Cyric tool is 100% GDPR proof. We also do our utmost to keep developing and we also take your wishes into account. 
-              The question I'm more wondering is, why shouldn’t I use Cyric.
-            </p>
+        <div class="p-5 bg-white text-center text-md-start shadow rounded card-custom ">
+          <h4 class="fw-bold mt-4">WHAT IS CYRIC?</h4>
+          <p>Cyric is a toolset with 6 functionalities:</p>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled lista">
+                <li>Hardware test</li>
+                <li>Create image</li>
+                <li>Restore image</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled lista">
+                <li>Malware scan</li>
+                <li>Data vault</li>
+                <li>Data wipe</li>
+              </ul>
+            </div>
           </div>
+          <p class="text-muted">
+            The toolset supports the x86 platform. This includes most desktops and notebooks. The 6 functionalities are used throughout Europe in all kinds of different ways. Curious how you can use Cyric? Let's figure it out together!
+          </p>
         </div>
-  
       </div>
+
+      <!-- WHY SHOULD I USE CYRIC -->
+      <div class="col-md-6 position-relative">
+        <!-- Icono flotante -->
+        <div class="icon-circle cicle-derecha">
+          <img src="../Sources/DetailServiceIcon2.png" alt="icono" />
+        </div>
+        <div class="p-5 bg-white text-center text-md-start shadow rounded card-custom ">
+          <h4 class="fw-bold mt-4">WHY SHOULD I USE CYRIC?</h4>
+          <p class="text-muted">
+            Apart from the fact that research has shown that Cyric is much faster than the manual process, you also have the advantage that everything is registered. 
+              This provides clarity for yourself, your colleagues and your manager.
+          </p>
+          <p class="text-muted">
+            The Cyric tool is 100% GDPR proof. We also do our utmost to keep developing and we also take your wishes into account. 
+              The question I'm more wondering is, why shouldn’t I use Cyric.
+          </p>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Contact Section -->
 <section class="py-5 bg-white">
@@ -106,14 +120,27 @@
   
         <!-- Tarjeta del Propietario -->
         <div class="col-md-6">
-          <div class="bg-white p-4 shadow rounded text-center">
-            <img src="../Sources/Photos/castor.jfif" alt="Jhon Smith" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
-            <h5 class="fw-bold mb-0">Jhon Smith</h5>
-            <small class="text-muted">Cyric Product Owner</small>
-            <hr>
-            <p class="mb-1"><strong>📍</strong> Stuttgartstraat 8, 3047 AS Rotterdam</p>
-            <p class="mb-1"><strong>📞</strong> +1 (123) 456-7890</p>
-            <p><strong>📧</strong> jhon@ask.serviceplanet.nl</p>
+          <div class="p-4 shadow rounded tarjeta-propietario">
+            <h4 class="fw-bold mb-4 ms-4">Meet our owner</h4>
+            <div class="row align-items-center">
+              
+              <!-- Columna de la imagen -->
+              <div class="col-md-4">
+                <div class="cicle-photo">
+                  <img src="../Sources/Photos/castor.jfif" alt="Tim Russie" class="photo-circle">
+                </div>
+              </div>
+        
+              <!-- Columna de la información -->
+              <div class="col-md-8">
+                <h5 class="fw-bold mb-0">Tim Russie</h5>
+                <small>Cyric Product Owner</small>
+                <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i> Stuttgartstraat 8, 3047 AS Rotterdam</p><br>
+                <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> +1 (123) 456-7890</p><br>
+                <p><i class="bi bi-envelope-fill me-2"></i> jhon@ask.serviceplanet.nl</p><br>
+              </div>
+        
+            </div>
           </div>
         </div>
   

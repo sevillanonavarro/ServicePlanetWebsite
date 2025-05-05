@@ -7,21 +7,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00aaff; /* azul */
+    background-image: linear-gradient(118deg, #098da1 0%, #29bdef 40%);
     clip-path: polygon(0% 100%, 0% 10%, 40% 10%, 34% 100%);
     z-index: 0;
   }
 
-  .mid-line {
-    position: absolute;
-    top: 0; /* la pega arriba */
-    left: 50%;
-    transform: translateX(-50%) rotate(90deg); /* centrada y rotada */
-    width: 80px; /* largo de la línea */
-    height: 1px;
-    background-color: #00aaff;
-    z-index: 1; /* por delante del fondo azul */ 
-  }
   .titulo-servicio {
     display: inline-flex;
     align-items: center;
@@ -96,6 +86,80 @@ body {
     right: -3%;
   }
 
+  
+
+  /*Segunda seccion*/
+
+  .icon-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .seccion-tarjetas{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .lista li::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #00aaff; /* azul */
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .card-custom{
+    min-height: 400px;
+  }
+
+  /*Contact Section*/
+  .tarjeta-propietario{
+    background-image: linear-gradient(118deg, #098da1 0%, #29bdef 100%);
+    color: white;
+  }
+
+  .cicle-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto; /* Centra la imagen si es necesario */
+    position: relative;
+    z-index: 1;
+    border: 2px solid white;
+    
+  }
+  
+  .photo-circle {
+    width: 92%;
+    height: 92%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+  }
+
+
   @media (max-width: 1199px) {
     .img-service {
       width: 35vw;
@@ -108,6 +172,9 @@ body {
       width: 10vw;
       height: 10vw;
     }
+    .card-custom{
+      min-height: 600px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -119,6 +186,22 @@ body {
     .background-shape{
       height: 52%;
     }
+    
+    .icon-circle {
+      position: relative;
+      top: 60px;
+      left: 60px;
+    }
+  
+
+    .seccion-tarjetas{
+      padding-top: 0rem;
+      padding-bottom: 9rem;
+    }
+    .card-custom{
+      min-height: 400px;
+    }
+    
   }
   @media (max-width: 375px) {
     .img-service {
@@ -129,15 +212,6 @@ body {
       height: 43%;
     }
   }
-
-.imagen-card{
-  position: absolute;
-  width: 70px; 
-  height: 70px; 
-  border-radius: 50%;  
-}
-
-
 /*Puede que no sirva para absolutamente nada*/
 .highlight {
   color: #00aaff;
@@ -148,10 +222,6 @@ body {
 .card-icon {
   font-size: 30px;
   margin-bottom: 20px;
-}
-.owner-card img {
-  border-radius: 50%;
-  width: 80px;
 }
 .use-case-card {
   border: 1px solid #e0e0e0;
