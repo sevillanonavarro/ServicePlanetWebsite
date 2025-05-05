@@ -76,12 +76,3 @@ AOS.init();
       track.style.transition = 'none';
       track.style.transform = `translateX(-${index * newWidth}px)`;
     });
-
-  document.getElementById('prevBtnMobile').addEventListener('click', () => {
-    document.getElementById('prevBtn').click();
-  });
-
-  document.getElementById('nextBtnMobile').addEventListener('click', () => {
-    document.getElementById('nextBtn').click();
-  });
-

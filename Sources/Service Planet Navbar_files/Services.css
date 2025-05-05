@@ -173,7 +173,6 @@ body {
     .service-card-wrapper {
       flex: 0 0 100%; /* 1 por fila en móvil */
       padding: 0 0.5rem;
-      padding-bottom: 1rem;
     }
   
     .service-card {

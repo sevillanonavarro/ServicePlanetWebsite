@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./StylesHome/Footer.css">
   <link rel="stylesheet" href="./StylesHome/Header.css">
   <link rel="stylesheet" href="./StylesHome/LifecycleSection.css">
+  <link rel="stylesheet" href="./StylesHome/Services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -19,6 +21,7 @@
 
   <!-- Top bar -->
 <div class="top-bar-wrapper" data-aos="fade-left"  data-aos-duration="1500">
+
   <div class="top-bar-inner">
     <a href="#">History</a>
     <a href="#">About Us</a>
@@ -150,7 +153,7 @@
 
 
  <section class="position-relative section-wrapper">
-
+  <div class="background"></div>
   <div class="container py-5">
     <div class="row align-items-center g-5">
       <!-- Left content -->
@@ -161,7 +164,7 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight">FAST SOLUTIONS</span><br>
+          <span class="highlight, gradient-text">FAST SOLUTIONS</span><br>
           FOR YOUR BUSINESS<br>
           TECHNOLOGY
         </h1>
@@ -175,64 +178,140 @@
       </div>
     </div>
   </div>
+
   <div class="mid-line"></div>
+
 </section>
 
-<a href="./Services/Cyric.html">Link to Cyric</a>
 
 
-<div class="container py-5">
-  <div class="section-title">
-    <p class="text-uppercase text-muted mb-1">What We Do</p>
-    <h2>Our <span>Services</span></h2>
-  </div>
 
-  <div class="d-flex justify-content-between mb-3">
-    <button class="arrow-btn">&larr;</button>
-    <button class="arrow-btn">&rarr;</button>
-  </div>
 
-  <div class="row g-4">
-    <!-- Card 1 -->
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="https://example.com/image1.jpg" alt="Cyric">
-        <div class="p-3">
-          <h5>Cyric</h5>
-          <p>Glad you found our page about Cyric! We on behalf of Service Planet hope that you will find what you are looking for here.</p>
-          <button class="learn-more-btn">Learn More →</button>
+<div class="container-fluid py-5 servicesContainer">
+  <div class="container p-0">
+    <div class="section-title text-center">
+      <img src="./Sources/LogoSmall.png" alt="Service Planet Logo" style="height: 30px; margin-bottom: 1rem;">
+      <p>What We Do</p>
+      <h2>Our <span class="gradient-text">Services</span></h2>
+    </div>
+
+    <!-- Carrusel y flechas escritorio -->
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mb-4">
+      <!-- Flecha izquierda (escritorio) -->
+      <button class="arrow-btn d-none d-md-flex" id="prevBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#00aeef">
+          <path d="M17 12H6M11 7l-5 5 5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <!-- Contenedor del carrusel -->
+      <div class="slider-container flex-grow-1 mx-2 overflow-hidden">
+        <div class="slider-track d-flex transition" id="sliderTrack">
+          <!-- Tarjeta 1 -->
+          <div class="service-card-wrapper">
+            <div class="service-card p-3">
+              <img src="./Sources/ImgServiciosHome.jpeg" alt="Cyric">
+              <h5>Cyric</h5>
+              <p>Glad you found our page about Cyric! We on behalf of Service Planet hope that you will find what you are looking for here.</p>
+              <button class="btn btn-learn d-flex align-items-center gap-2">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#00aeef">
+                  <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="service-card-wrapper">
+            <div class="service-card p-3">
+              <img src="./Sources/ImgServiciosHome2.webp" alt="Onsite Service">
+              <h5>Onsite Service</h5>
+              <p>The Onsite department provides technical services at customer locations. This includes performing repairs on computing.</p>
+              <button class="btn btn-learn d-flex align-items-center gap-2">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#00aeef">
+                  <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="service-card-wrapper">
+            <div class="service-card p-3">
+              <img src="./Sources/ImgServiciosHome3.jpeg" alt="Refurbishment">
+              <h5>Refurbishment</h5>
+              <p>The refurbishment department is responsible for making the products eligible for resale by means of testing.</p>
+              <button class="btn btn-learn d-flex align-items-center gap-2">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#00aeef">
+                  <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div class="service-card-wrapper">
+            <div class="service-card p-3">
+              <img src="./Sources/ImgServiciosHome3.jpeg" alt="Sevilla">
+              <h5>Sevilla</h5>
+              <p>The refurbishment department is responsible for making the products eligible for resale by means of testing.</p>
+              <button class="btn btn-learn d-flex align-items-center gap-2">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#00aeef">
+                  <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="https://example.com/image2.jpg" alt="Onsite Service">
-        <div class="p-3">
-          <h5>Onsite Service</h5>
-          <p>The Onsite department provides technical services at customer locations. This includes performing repairs on computing.</p>
-          <button class="learn-more-btn">Learn More →</button>
-        </div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="https://example.com/image3.jpg" alt="Refurbishment">
-        <div class="p-3">
-          <h5>Refurbishment</h5>
-          <p>The refurbishment department is responsible for making the products eligible for resale by means of testing.</p>
-          <button class="learn-more-btn">Learn More →</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="text-center mt-5">
-    <button class="view-all-btn">View All Services →</button>
+      <!-- Flecha derecha (escritorio) -->
+      <button class="arrow-btn d-none d-md-flex" id="nextBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#00aeef">
+          <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Flechas móviles debajo del carrusel -->
+    <div class="d-flex d-md-none justify-content-center gap-4 mt-2">
+      <button class="arrow-btn" id="prevBtnMobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#00aeef">
+          <path d="M17 12H6M11 7l-5 5 5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="arrow-btn" id="nextBtnMobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#00aeef">
+          <path d="M7 12h11M13 7l5 5-5 5" stroke="#00aeef" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Botón "View All Services" -->
+    <div class="text-center mt-4">
+      <button class="view-all-btn d-inline-flex align-items-center gap-2">
+        View All Services
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M7 12h11M13 7l5 5-5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+<a href="./Services/Cyric.html">Link to Cyric</a>
 
   <footer class="bg-dark text-light pt-5 pb-3 footer">
     <div class="container">

@@ -53,6 +53,9 @@ h1 {
   display: inline-block;
   transition: background 0.3s ease;
 }
+.diagram{
+  height: 100%;
+}
 .btn-gradient:hover {
   background: linear-gradient(to right, #138aad, #4fbde8);
 }
@@ -66,32 +69,12 @@ h1 {
   background-color: #00aaff;
   z-index: 1; /* por delante del fondo azul */ 
 }
-
-.diagram{
-  height: 30rem;
-  width: 30rem;
-}
-
-@media (max-width: 991px) {
-
-  .diagram{
-    height: 20rem;
-    width: 20rem;
-  }
-}
-
-
 @media (max-width: 768px) {
   .mid-line {
     bottom: 10px;
   }
   .background-shape {
     clip-path: polygon(100% 100%, 100% 30%, 100% 30%, 0% 100%);
-  }
-
-  .diagram{
-    height: 20rem;
-    width: 20rem;
   }
 
   h1 {
