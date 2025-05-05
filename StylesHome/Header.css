@@ -1,5 +1,9 @@
+/* Importar la fuente Barlow desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+/* Aplicar la fuente a toda la página */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -290,19 +294,7 @@ body {
   color: #333;
   font-size: 13.5px;
 }
-.diagram{
 
-  animation: rotateAnimation 0.8s ease-in-out;
-}
-
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 
   @media (max-width: 991px) {
