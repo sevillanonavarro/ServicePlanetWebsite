@@ -51,10 +51,34 @@ h1 {
   font-size: clamp(14px, 1.2vw, 18px);
   text-decoration: none;
   display: inline-block;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(92, 200, 244, 0.25) 0%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.btn-gradient:hover::before {
+  transform: scale(1);
+}
+
 .btn-gradient:hover {
+  color: white;
   background: linear-gradient(to right, #138aad, #4fbde8);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(92, 200, 244, 0.35);
 }
 .mid-line {
   position: absolute;
