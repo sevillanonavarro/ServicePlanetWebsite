@@ -1,0 +1,115 @@
+.timeline-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Escritorio (horizontal) */
+    overflow: visible;
+    z-index: 1;
+  }
+  .contieneAbout{
+    background-color: white;
+  }
+  .timeline-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+  }
+  
+  .floating-text {
+    position: absolute;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    width: 22%;
+    text-align: left;
+  }
+
+  .mid-line-history {
+    position: absolute;
+    margin-top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; /* Grosor de la línea */
+    height: 80px; /* Largo hacia abajo */
+    background-color: #00aaff;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  /* === POSICIONES PARA ESCRITORIO (horizontal) === */
+  .box-1 { top: 16%; left: 8%; }
+  .box-2 { top: 40%; left: 29%; }
+  .box-3 { top: 6%;  left: 52.2%; }
+  .box-4 { top: 40%; left: 74%; }
+
+  
+  .timeline-arrow-btn {
+    background: #6f6f6f;
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .timeline-arrow-btn:hover{
+    background: #26b8e6;
+  }
+  
+  .timeline-arrow-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* === MOBILE (< 992px) con imagen vertical === */
+  @media (max-width: 1200px) {
+    .timeline-wrapper {
+      aspect-ratio: 9 / 16;
+    }
+  
+    .timeline-img {
+      content: url('../Sources/HistoriaResponsive.png');
+      height: 100%;
+    }
+
+    
+    
+    .floating-text {
+      width: 40%; /* más estrecho si quieres colocarlos a lados opuestos */
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  
+    /* Posiciones PERSONALIZADAS para imagen vertical */
+    .box-1 {
+      top: 13.5%;
+      left: 7%; /* lado izquierdo */
+    }
+  
+    .box-2 {
+      top: 34%;
+      left: 53%; /* lado derecho */
+    }
+  
+    .box-3 {
+      top: 57%;
+      left: 7%; /* lado izquierdo */
+    }
+  
+    .box-4 {
+      top: 81%;
+      left: 53%; /* lado derecho */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .floating-text {
+        width: 40%; /* más estrecho si quieres colocarlos a lados opuestos */
+        font-size: 0.6rem;
+        padding: 10px;
+      }
+  }

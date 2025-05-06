@@ -1,11 +1,13 @@
 .about-section {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     color: #333;
     padding: 100px 0;
+    z-index: -1;
 }
+
 
 .skew-bg {
     position: absolute;
@@ -68,15 +70,17 @@
 
 .hor-line {
     position: absolute;
-    top: 50%;
-    left: 115%; /* Ajusta según separación deseada respecto a la palabra */
-    transform: translateY(-50%);
-    width: 100vw; /* Longitud de la línea */
-    height: 1px;
+    top: 33%;
+    right: 0; /* Comienza desde el borde izquierdo */
+    width: 32%; /* El ancho de la línea es 100% del viewport */
+    max-width: 100%; /* Asegura que no se haga más ancha que el viewport */
+    height: 2px;
     background-color: #00aaff;
-  }
-  
-  .hor-line::after {
+    transform: translateY(-50%);
+    z-index: 1; /* Asegura que la línea esté por encima de otros elementos si es necesario */
+}
+
+.hor-line::after {
     content: '';
     position: absolute;
     left: 0;
@@ -86,7 +90,8 @@
     height: 8px;
     background-color: #00aaff;
     border-radius: 50%;
-  }
+}
+  
   
 
 
@@ -146,17 +151,32 @@
     background-color: #fff;
     z-index: -1;
 }
+@media (max-width: 991px) {
+    .skew-bg {
+        position: absolute;
+        top: 43%;
+        left: -20%;
+        background-color: #009fe3;
+        transform: skewX(-20deg);
+        transform-origin: top left;
+        z-index: -1;
+        pointer-events: none;
+    }
+}
 
 @media (max-width: 768px) {
 
     .skew-bg {
         position: absolute;
         top: 50%;
-        width: 100%;
-        height: 100%;
+        left: -20%;
         background-color: #009fe3;
         transform: skewX(-20deg);
+        transform-origin: top left;
+        z-index: -1;
+        pointer-events: none;
     }
+    
 
     .contieneimagenes{
         margin-top: 30%;

@@ -58,13 +58,14 @@ h1 {
 }
 .mid-line {
   position: absolute;
-  bottom: 20px;
+  top: 95%; /* Ubica justo al final de la sección */
   left: 50%;
-  transform: translateX(-50%) rotate(90deg); /* centrada y rotada */
-  width: 80px; /* largo de la línea */
-  height: 1px;
+  transform: translateX(-50%);
+  width: 2px; /* Grosor de la línea */
+  height: 80px; /* Largo hacia abajo */
   background-color: #00aaff;
-  z-index: 1; /* por delante del fondo azul */ 
+  z-index: 10;
+  pointer-events: none;
 }
 
 .diagram{
