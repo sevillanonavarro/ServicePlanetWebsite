@@ -1,12 +1,14 @@
-.background-shape {
+.skew-bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(140deg, #098da1 0%, #29bdef 40%);
-  clip-path: polygon(0% 100%, 0% 10%, 40% 10%, 34% 100%);
+  top: 10%;
+  left: -23%;
+  width: 70%;
+  height: 90%;
+  background-color: #009fe3;
+  transform: skewX(-20deg);
+  transform-origin: top left;
   z-index: 0;
+  pointer-events: none;
 }
 
 .service-title {
@@ -19,7 +21,7 @@
 .hor-line {
   position: absolute;
   left: 200%;
-  width: 400%;
+  width: 600%;
   margin-left: 10px;
   height: 2px;
   margin: 0 auto;
@@ -85,8 +87,11 @@
 
 /* Media Queries */
 @media (max-width: 1199px) {
+  .image-container {
+    margin-right: 3rem;
+  }
   .img-service {
-    width: 35vw;
+    width: 42vw;
   }
   .cyric-text {
     width: 100%;
@@ -98,19 +103,35 @@
 }
 
 @media (max-width: 767px) {
+  .img-service {
+    width: 60vw;
+  }
   .image-container {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
-  .background-shape {
-    height: 52%;
-  }
+  .skew-bg {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 47%;
+    background-color: #009fe3;
+    transform: skewX(-20deg);
+}
 }
 
 @media (max-width: 375px) {
+  .image-container {
+    margin-bottom: 4rem;
+  }
   .img-service {
-    width: 50vw;
+    width: 60vw;
   }
-  .background-shape {
-    height: 43%;
-  }
+  .skew-bg {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 38%;
+    background-color: #009fe3;
+    transform: skewX(-20deg);
+}
 }

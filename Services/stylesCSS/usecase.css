@@ -1,0 +1,121 @@
+.container-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 20px 40px; /* Espacio a la izquierda para la línea */
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    height: 100%;
+  }
+  
+  .tag-blue {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: #29bdef;
+    border-radius: 4px;
+  }
+  
+  .button-cases {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #29bdef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .button-cases:hover {
+    background-color: #0079a1;
+    transform: translateY(-2px);
+  }
+  
+  .button-cases i {
+    margin-left: 6px;
+  }
+
+  #select-exit {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 30px; /* Opcional: espacio desde lo anterior */
+  }
+  
+  .slider-button {
+    width: 40px;
+    height: 4px;
+    background-color: #bbbbbb;
+    border-radius: 2px;
+    padding: 3px;
+    transition: width 0.4s ease, height 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .slider-button:hover{
+    width: 45px;
+    height: 5px;
+    background-color: #29bdef;
+  }
+
+  .slider-container {
+    overflow: hidden;
+    padding: 0 5%;
+    position: relative;
+  }
+  
+  .slider-container::before, .slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%; /* Ajusta el tamaño del difuminado */
+   
+    z-index: 1;
+  }
+  
+  .slider-container::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f3f3f3);
+  }
+  
+  .slider-container::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#f3f3f3);
+  }
+  .card-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 60%; /* Cada slide ocupa el 40% del contenedor */
+    margin-right: 5%; /* Espacio entre slides */
+  }
+  
+  .buttons-select {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .slider-button {
+    width: 40px;
+    height: 4px;
+    background-color: #bbbbbb;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .slider-button.active,
+  .slider-button:hover {
+    background-color: #29bdef;
+  }
+  
