@@ -5,8 +5,13 @@
     overflow: visible;
     z-index: 1;
   }
+
+  
   .contieneAbout{
     background-color: white;
+  }
+  #slider1{
+    display: none;
   }
   .timeline-img {
     position: absolute;
