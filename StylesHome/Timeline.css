@@ -68,7 +68,9 @@
   .timeline-arrow-btn:hover {
     transform: scale(1.1);
   }
-  
+  .timeline-arrows svg{
+    margin: 0 auto;
+  }
   
   /* === MOBILE (< 992px) con imagen vertical === */
   @media (max-width: 1200px) {
