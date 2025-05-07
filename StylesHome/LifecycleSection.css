@@ -10,10 +10,12 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(180deg, #098da1 0%,  #29bdef 100%);
-  clip-path: polygon(100% 100%, 100% 0%, 75vw 0%, 55svw 100%);
+  clip-path: polygon(100% 100%, 100% 0%, 75% 0%, 40svw 100%);
   z-index: -1; /* Coloca la forma detrás de otros elementos */
   pointer-events: none;
 }
+
+
 
 .logo-text {
   font-size: clamp(18px, 1.4vw, 30px);
@@ -93,8 +95,8 @@ h1 {
 }
 
 .diagram{
-  height: 30rem;
-  width: 30rem;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 991px) {

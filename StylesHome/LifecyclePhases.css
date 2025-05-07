@@ -1,0 +1,47 @@
+.svg-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  svg {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+
+  .zoom-group {
+    transition: transform 0.3s ease;
+    /* Se sobrescribirá en JS */
+    transform-origin: center;
+    transform-box: fill-box;
+    pointer-events: auto;
+  }
+  .zoom-group.hovered {
+    transform: scale(1.2);
+  }
+
+  .hover-area {
+    fill: transparent;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  #coords {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    font-family: monospace;
+  }
+
+  line {
+    stroke: red;
+    stroke-width: 0.5;
+  }
+  @media (max-width: 768px) {
+
+    #svg-clicker{
+      margin: 0 auto;
+    }
+
+  }
+  

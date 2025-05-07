@@ -12,7 +12,7 @@ AOS.init();
       const shape = document.querySelector('.background-shape');
     
       // Añade margen extra para asegurar que el recorte cubra todo
-      const extra = 115; // puedes ajustar este valor según necesidad
+      const extra = 180; // puedes ajustar este valor según necesidad
       shape.style.height = (mainSection.offsetHeight + extra) + 'px';
     }
     
