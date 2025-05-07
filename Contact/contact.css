@@ -38,3 +38,14 @@
   .icon{
     color: #29bdef;
   }
+
+  input.form-control {
+    padding-left: 2.5rem !important;
+  }
+
+  .schedule-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0; /* Espaciado vertical opcional */
+    width: 100%;
+  }
