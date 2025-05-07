@@ -1,28 +1,40 @@
-.icon-box {
-    width: 60px;
-    height: 60px;
-    background-color: #eaf4fc;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+.gradient-text {
+    background-image: linear-gradient(118deg, #098da1 50%, #29bdef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
-  .section-title {
-    color: #009FE3;
+.section-title {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .section-title h2 {
     font-weight: bold;
   }
-  .card-custom {
-    border-left: 4px solid #009FE3;
-    padding-left: 1rem;
-    margin-bottom: 1.5rem;
+  .icon-text {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 15px;
   }
-  a.service-link {
-    display: inline-block;
-    margin-right: 1rem;
-    color: #009FE3;
-    text-decoration: none;
+  .contact-box {
+    background-image: linear-gradient(118deg, #098da1 0%, #29bdef 100%);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
   }
-  a.service-link:hover {
-    text-decoration: underline;
+  .contact-box input,
+  .contact-box textarea {
+    margin-bottom: 10px;
+  }
+  .hours-note {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .opening-hours h5 {
+    margin-top: 20px;
+  }
+
+  .icon{
+    color: #29bdef;
   }
