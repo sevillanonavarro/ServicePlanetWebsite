@@ -23,19 +23,19 @@
     <!-- Contact Info & Form -->
     <div class="row g-4 mb-5">
       <!-- Contact Info Column 1 -->
-      <div class="col-md-4">
-        <div class="icon-text"><i class="bi bi-geo-alt-fill icon"></i> <div><strong>Postal Address:</strong><br>Stuttgartstraat 8, 3047 AS Rotterdam</div></div><br>
-        <div class="icon-text"><i class="bi bi-geo-alt-fill icon"></i> <div><strong>Visiting Address:</strong><br>Bristolstraat 7, 3047 AB Rotterdam</div></div><br>
-        <div class="icon-text"><i class="bi bi-envelope-fill icon"></i> <div><strong>Email:</strong><br>info@ask.serviceplanet.nl</div></div><br>
-        <div class="icon-text"><i class="bi bi-bank icon"></i> <div><strong>Bank:</strong><br>NL60RABO0105284521, Rabobank Rotterdam, RABONL2U</div></div><br>
+      <div class="col-md-4 fs-5">
+        <div class="icon-text"><i class="bi bi-geo-alt-fill icon fs-3"></i> <div><strong>Postal Address:</strong><br>Stuttgartstraat 8, 3047 AS Rotterdam</div></div><br>
+        <div class="icon-text"><i class="bi bi-geo-alt-fill icon fs-3"></i> <div><strong>Visiting Address:</strong><br>Bristolstraat 7, 3047 AB Rotterdam</div></div><br>
+        <div class="icon-text"><i class="bi bi-envelope-fill icon fs-3"></i> <div><strong>Email:</strong><br>info@ask.serviceplanet.nl</div></div><br>
+        <div class="icon-text"><i class="bi bi-bank icon fs-3"></i> <div><strong>Bank:</strong><br>NL60RABO0105284521, Rabobank Rotterdam, RABONL2U</div></div><br>
       </div>
 
       <!-- Contact Info Column 2 -->
-      <div class="col-md-4">
-        <div class="icon-text"><i class="bi bi-geo-alt-fill icon"></i> <div><strong>Goods Address:</strong><br>Bristolstraat 7, 3047 AB Rotterdam</div></div><br>
-        <div class="icon-text"><i class="bi bi-telephone-fill icon"></i> <div><strong>Telephone:</strong><br>+31 10 4008200</div></div><br>
-        <div class="icon-text"><i class="bi bi-building icon"></i> <div><strong>Chamber of Commerce:</strong><br>24376716 Rotterdam</div></div><br>
-        <div class="icon-text"><i class="bi bi-receipt icon"></i> <div><strong>VAT Number:</strong><br>NL814389934B01</div></div><br>
+      <div class="col-md-4 fs-5">
+        <div class="icon-text"><i class="bi bi-geo-alt-fill icon fs-3"></i> <div><strong>Goods Address:</strong><br>Bristolstraat 7, 3047 AB Rotterdam</div></div><br>
+        <div class="icon-text"><i class="bi bi-telephone-fill icon fs-3"></i> <div><strong>Telephone:</strong><br>+31 10 4008200</div></div><br>
+        <div class="icon-text"><i class="bi bi-building icon fs-3"></i> <div><strong>Chamber of Commerce:</strong><br>24376716 Rotterdam</div></div><br>
+        <div class="icon-text"><i class="bi bi-receipt icon fs-3"></i> <div><strong>VAT Number:</strong><br>NL814389934B01</div></div><br>
       </div>
 
       <!-- Contact Form -->
@@ -43,11 +43,26 @@
         <div class="contact-box p-4 text-white">
           <form class="p-4" id="contact-form">
             <h5>LEAVE US A MESSAGE</h5>
-            <input type="text" class="form-control mb-2" name="first_name" placeholder="First Name" required>
-            <input type="text" class="form-control mb-2" name="last_name" placeholder="Last Name" required>
-            <input type="email" class="form-control mb-2" name="email" placeholder="Email address" required>
-            <input type="tel" class="form-control mb-2" name="phone" placeholder="Phone Number" required>
-            <textarea class="form-control mb-2" rows="3" name="message" placeholder="Leave Message" required></textarea>
+            <div class="form-group position-relative mb-3">
+              <i class="bi bi-person-fill position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+              <input type="text" class="form-control ps-5" placeholder="First Name" name="first_name">
+            </div>
+            <div class="form-group position-relative mb-3">
+              <i class="bi bi-person-lines-fill position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+              <input type="text" class="form-control ps-5" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group position-relative mb-3">
+              <i class="bi bi-envelope-fill position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+              <input type="email" class="form-control ps-5" name="email" placeholder="Email address" required>
+            </div>
+            <div class="form-group position-relative mb-3">
+              <i class="bi bi-telephone-fill position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+              <input type="tel" class="form-control ps-5" name="number" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group position-relative mb-3">
+              <i class="bi bi-chat-text-fill position-absolute top-0 start-0 mt-2 ps-3 text-muted"></i>
+              <textarea class="form-control ps-5" rows="3" name="message" placeholder="Leave Message" required></textarea>
+            </div>
             <button class="btn btn-dark w-50" type="submit">SEND MESSAGE</button>
           </form>
         </div>
@@ -61,17 +76,47 @@
   <div class="container">
     <div class="row">
       <!-- Counter Opening Hours -->
-      <div class="col-md-6">
-        <h5>🕒 Counter Opening Hours (Repair Intake):</h5>
-        <p>
-          Monday: 13:00 - 17:00<br>
-          Tuesday: 13:00 - 17:00<br>
-          Wednesday: 13:00 - 17:00<br>
-          Thursday: 13:00 - 17:00<br>
-          Friday: 13:00 - 17:00<br>
-          Saturday: Closed<br>
-          Sunday: Closed
-        </p>
+      <div class="col-md-12 fs-5">
+        <h5 class="fw-bold mb-3 fs-3"><i class="bi bi-clock icon me-2"></i> Counter Opening Hours (Repair Intake):</h5>
+        <div class="row align-items-start">
+            <!-- Columna izquierda: Lunes a Jueves -->
+              
+              <div class="row">
+                <div class="col-lg-4">
+                    <div class="schedule-row">
+                        <p class="mb-0">Monday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Tuesday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Wednesday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Thursday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="schedule-row">
+                    <p class="mb-0">Friday:</p>
+                    <p class="mb-0">13:00 - 17:00</p>
+                  </div>
+                  <div class="schedule-row">
+                    <p class="mb-0">Saturday:</p>
+                    <p class="mb-0">Closed</p>
+                  </div>
+                  <div class="schedule-row">
+                    <p class="mb-0">Sunday:</p>
+                    <p class="mb-0">Closed</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>                   
       </div>
 
       <!-- Office Opening Hours -->
@@ -84,19 +129,48 @@
           If applicable, you must transfer outstanding invoices in advance, stating the invoice number. For the safety of you and our staff, we unfortunately cannot accept cash. Payment by PIN is also not possible. Thank you for your understanding.
         </p>
       </div>
-      <div class="col-md-6">
-        <h5>🕒 Office Opening Hours:</h5>
-        <p>
-          Monday: 9:00 - 18:00<br>
-          Tuesday: 9:00 - 18:00<br>
-          Wednesday: 9:00 - 18:00<br>
-          Thursday: 9:00 - 18:00<br>
-          Friday: 9:00 - 18:00<br>
-          Saturday: Closed<br>
-          Sunday: Closed
-        </p>
+      <div class="col-md-12 fs-5">
+        <h5 class="fw-bold mb-3 fs-3"><i class="bi bi-clock icon me-2"></i>Office Opening Hours:</h5>
+        <div class="row align-items-start">
+            <!-- Columna izquierda: Lunes a Jueves -->
+              
+              <div class="row">
+                <div class="col-lg-4">
+                    <div class="schedule-row">
+                        <p class="mb-0">Monday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Tuesday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Wednesday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                      <div class="schedule-row">
+                        <p class="mb-0">Thursday:</p>
+                        <p class="mb-0">13:00 - 17:00</p>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="schedule-row">
+                    <p class="mb-0">Friday:</p>
+                    <p class="mb-0">13:00 - 17:00</p>
+                  </div>
+                  <div class="schedule-row">
+                    <p class="mb-0">Saturday:</p>
+                    <p class="mb-0">Closed</p>
+                  </div>
+                  <div class="schedule-row">
+                    <p class="mb-0">Sunday:</p>
+                    <p class="mb-0">Closed</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>                   
       </div>
-    </div>
   </div>
 </section>
 

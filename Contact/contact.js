@@ -3,12 +3,12 @@ const form = document.getElementById("contact-form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     
-    fetch("https://script.google.com/macros/s/AKfycbyIlpi789yLRfMSx2vbQeBMQJAZ7FH0rX6rZmW2l7LEURi7QzSyWnYFeLuAZCHQh3CoMQ/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxWdNDy39Gk9TWDhU20HOz1yHNcwwAJhDKKcyIOZ0RcVsXslYyudkQy2TjIoal_yrAIJA/exec", {
       method: "POST",
       body: new FormData(form),
     })
-    .then(response => alert("Message sent!"))
-    .catch(error => alert("Error sending message"));
+    .then(response => console.log("Message sent!"))
+    .catch(error => console.log("Error sending message"));
     
     form.reset();
   });
