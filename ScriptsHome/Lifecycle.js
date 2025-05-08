@@ -5,10 +5,10 @@ const zoomLayer  = document.getElementById('zoom-layer');
 
 // 1) Configura aquí los transform-origins (en unidades SVG)
 const transformOrigins = {
-  1: { x: 18, y: 20 },
-  2: { x: 28, y: 82 },
-  3: { x: 85, y: 65 },
-  4: { x: 75, y: 18 }
+  1: { x: 12, y: 20 },
+  2: { x: 28, y: 88 },
+  3: { x: 87, y: 68 },
+  4: { x: 73, y: 15 }
 };
 
 // 2) Aplica los orígenes justo al cargar
