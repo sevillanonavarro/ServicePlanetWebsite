@@ -396,45 +396,58 @@ function addPhase2Extras(idx) {
 
 function addPhase2Center() {
   const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
-  img.setAttribute("id",   phase2Center.id);
+  img.setAttribute("id",    phase2Center.id);
   img.setAttribute("class", phase2Center.class);
   img.setAttribute("x",     phase2Center.x);
   img.setAttribute("y",     phase2Center.y);
   img.setAttribute("width",  phase2Center.width);
   img.setAttribute("height", phase2Center.height);
-  img.style.transition      = 'transform 0.5s ease-out';
   img.setAttributeNS("http://www.w3.org/1999/xlink", "href", phase2Center.href);
+
+  // Guarda el ángulo actual en un data-attribute, empezando en 0
+  img.dataset.angle = "0";
+
   phase2Areas.appendChild(img);
 
+  // Texto central vacío
   const txt = document.createElementNS("http://www.w3.org/2000/svg","text");
   txt.setAttribute("id", "phase2-center-text");
-
-  txt.textContent    = "";  // vacío al inicio
   phase2Areas.appendChild(txt);
-
-  
 }
 
-
-
-function rotateCenterTo(element) {
+function rotateCenterTo(target) {
   const centerImg = newSvg.querySelector('#phase2-center');
 
-  // 1) Calcula el centro del puntero:
+  // 1) Calcula el centro de rotación
   const cb = centerImg.getBBox();
   const cx = cb.x + cb.width  / 2;
   const cy = cb.y + cb.height / 2;
 
-  // 2) Calcula el centro de la bola clicada:
-  const bb = element.getBBox();
-  const bx = bb.x + bb.width  / 2;
-  const by = bb.y + bb.height / 2;
+  // 2) Calcula el nuevo ángulo de la misma forma
+  const bb = target.getBBox();
+  let angle = Math.atan2(
+    (bb.y + bb.height/2) - cy,
+    (bb.x + bb.width/2)  - cx
+  ) * 180 / Math.PI + 90;
 
-  // 3) Ángulo entre ambos (0° apunta a la derecha)
-  let angle = Math.atan2(by - cy, bx - cx) * 180 / Math.PI;
-  // Si tu flecha apunta hacia arriba originalmente, añade +90°
-  angle += 90;
+  // 3) Recoge el ángulo previo
+  const prev = parseFloat(centerImg.dataset.angle || 0);
 
-  // 4) Aplica rotación en sitio:
-  centerImg.setAttribute('transform', `rotate(${angle} ${cx} ${cy})`);
+  // 4) Limpia cualquier animación previa
+  const oldAnim = centerImg.querySelector('animateTransform');
+  if (oldAnim) oldAnim.remove();
+
+  // 5) Crea el <animateTransform> y lo arrancas
+  const anim = document.createElementNS("http://www.w3.org/2000/svg", "animateTransform");
+  anim.setAttribute("attributeName", "transform");
+  anim.setAttribute("type",          "rotate");
+  anim.setAttribute("from",          `${prev} ${cx} ${cy}`);
+  anim.setAttribute("to",            `${angle} ${cx} ${cy}`);
+  anim.setAttribute("dur",           "0.5s");
+  anim.setAttribute("fill",          "freeze");
+  centerImg.appendChild(anim);
+  anim.beginElement();
+
+  // 6) Guarda el nuevo ángulo
+  centerImg.dataset.angle = angle.toString();
 }
