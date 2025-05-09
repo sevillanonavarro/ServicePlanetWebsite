@@ -1,0 +1,33 @@
+.allService-container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .title-container {
+    margin-bottom: 30px;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(118deg, #098da1 50%, #29bdef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .img-logosmall {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 120px;
+  }
+  
+  .nav-pills-wrapper .nav-link {
+    margin: 0 8px;
+    border-radius: 20px;
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .nav-pills-wrapper .nav-link:hover {
+    background-color: #e7f1ff;
+  }
+  

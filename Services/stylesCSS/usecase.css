@@ -5,8 +5,7 @@
     justify-content: space-between;
     padding: 20px 20px 20px 40px; /* Espacio a la izquierda para la línea */
     background-color: white;
-    border-radius: 5%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
     text-align: left;
     height: 100%;
   }

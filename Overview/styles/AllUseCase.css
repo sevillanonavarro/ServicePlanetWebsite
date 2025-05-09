@@ -1,0 +1,193 @@
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+  }
+
+  .section-title span {
+    color: #00aaff;
+    font-weight: bold;
+  }
+  .gradient-text {
+    background-image: linear-gradient(118deg, #098da1 50%, #29bdef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+  }
+
+  .skew-bg {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    width: 150%;
+    height: 100%;
+    background-image: linear-gradient(110deg, #098da1 2%, #29bdef 10%);
+    transform: skewX(-20deg);
+    transform-origin: top left;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .contact-title {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  .gray-line {
+    position: absolute;
+    right: 110%;
+    width: 400%;
+    margin-left: 10px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #29bdef;
+  }
+  
+  .gray-line::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #29bdef;
+    border-radius: 50%;
+  }
+  .container-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 20px 40px; /* Espacio a la izquierda para la línea */
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    height: 100%;
+  }
+  
+  .tag-blue {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: #29bdef;
+    border-radius: 4px;
+  }
+  
+  .button-cases {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #29bdef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .button-cases:hover {
+    background-color: #0079a1;
+    transform: translateY(-2px);
+  }
+  
+  .button-cases i {
+    margin-left: 6px;
+  }
+  
+  .slider-button {
+    width: 40px;
+    height: 4px;
+    background-color: #bbbbbb;
+    border-radius: 2px;
+    padding: 3px;
+    transition: width 0.4s ease, height 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .slider-button:hover{
+    width: 45px;
+    height: 5px;
+    background-color: #29bdef;
+  }
+
+  .slider-container {
+    overflow: hidden;
+    padding: 0 5%;
+    position: relative;
+  }
+  
+  .slider-container::before, .slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2%; /* Ajusta el tamaño del difuminado */
+   
+    z-index: 1;
+  }
+  
+  .slider-container::before {
+    left: 0;
+  }
+  
+  .slider-container::after {
+    right: 0;
+  }
+
+  /*Colors of the gradient*/
+  .slider-white::before{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#ffffff);
+  }
+
+  .slider-white::after{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#ffffff);
+  }
+
+  .slider-light::before{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f8f9fa);
+  }
+
+  .slider-light::after{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#f8f9fa);
+  }
+  .slider-sales::before{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f8f9fa);
+  }
+
+  .slider-sales::after{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#29bdef);
+  }
+  
+  .card-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 60%; /* Cada slide ocupa el 40% del contenedor */
+    margin-right: 5%; /* Espacio entre slides */
+  }
+  
+  .buttons-select {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2
+  }
+  
+  .slider-button.active,
+  .slider-button:hover {
+    background-color: #0f91b9;
+  }
+
+  .botones-blanco .slider-button:hover,
+  .botones-blanco .slider-button.active {
+    background-color: #0f91b9;
+  }
