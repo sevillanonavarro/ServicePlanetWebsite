@@ -11,74 +11,503 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="allService-container">
-        <diV class="title-container">
-            <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
-            <p>WHAT WE OFFER</p>
-            <h3><span class="gradient-text">SERVICES</span> WE PROVIDE</h3>  
-        </diV> 
-      <div class="nav-pills-wrapper my-4">
-        <ul class="nav nav-pills justify-content-center" id="menuServicios">
-          <li class="nav-item">
-            <a class="nav-link" href="#cyric">Cyric</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#onsite">Onsite Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#refurbishment">Refurbishment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#depot">Depot Repair</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#hpconnect">HP ProConnect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cyric">Cyric</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#onsite">Onsite Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#refurbishment">Refurbishment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#depot">Depot Repair</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#hpconnect">HP ProConnect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cyric">Cyric</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#onsite">Onsite Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#refurbishment">Refurbishment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#depot">Depot Repair</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#hpconnect">HP ProConnect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cyric">Cyric</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#onsite">Onsite Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#refurbishment">Refurbishment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#depot">Depot Repair</a>
-          </li>
-        </ul>
+    <!--Menu-->
+    <section class="allServiceMenu-container py-5">
+      <div class="title-container text-center">
+        <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
+        <p class="fs-6">WHAT WE OFFER</p>
+        <h1><span class="gradient-text">SERVICES</span> WE PROVIDE</h1>  
+      </div>
+    
+      <!-- Controles -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <button id="prevBtn" class="btn btn-outline-secondary">←</button>
+        <button id="nextBtn" class="btn btn-outline-secondary">→</button>
+      </div>
+    
+      <!-- Slider -->
+      <div class="slider-container position-relative overflow-hidden">
+        <div id="sliderTrack" class="d-flex transition">
+          <!-- Cada grupo contiene 5 items -->
+          <div class="slider-group d-flex">
+            <div class="nav-item"><a class="nav-link" href="#cyric">Cyric</a></div>
+            <div class="nav-item"><a class="nav-link" href="#onsite">Onsite</a></div>
+            <div class="nav-item"><a class="nav-link" href="#refurbishment">Refurbishment</a></div>
+            <div class="nav-item"><a class="nav-link" href="#depot">Depot</a></div>
+            <div class="nav-item"><a class="nav-link" href="#hpconnect">HP ProConnect</a></div>
+          </div>
+          <div class="slider-group d-flex">
+            <div class="nav-item"><a class="nav-link" href="#cyric">Cyric</a></div>
+            <div class="nav-item"><a class="nav-link" href="#onsite">Onsite</a></div>
+            <div class="nav-item"><a class="nav-link" href="#refurbishment">Refurbishment</a></div>
+            <div class="nav-item"><a class="nav-link" href="#depot">Depot</a></div>
+            <div class="nav-item"><a class="nav-link" href="#hpconnect">HP ProConnect</a></div>
+          </div>
+          <!-- Agrega más grupos si necesitas -->
+        </div>
       </div>
     </section>
+
+
+    <section class="container px-4">
+      <div class="mid-line"></div>
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+
+      <div class="row flex-row-reverse align-items-center position-relative py-5">
+         <!-- Columna de imagen -->
+         <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-impar" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-impar  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-impar position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center position-relative py-5">
+        
+        <!-- Columna de imagen -->
+        <div class="col-md-6">
+          <img src="../Sources/ImgServiciosHome2.webp" alt="Workspace" class="img-allservices img-par" />
+        </div>
+    
+        <!-- Columna de texto con fondo y marco decorativo -->
+        <div class="col-md-5 position-relative">
+          <div class="content-box-par  p-5 ">
+            <h3 class="fw-bold">HP Workspace ProConnect</h3>
+            <p class="text-muted">
+              We manage B2B customers. We do the full on-offboarding of their employees. 
+              We make sure that the new starters receive a working machine and that old devices are returned
+            </p>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="accent-box-par position-absolute"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="bg-dark text-light pt-5 pb-3 footer">
+      <div class="container">
+        <div class="row text-sm-start text-center">
+          <!-- Logo y LinkedIn -->
+          <div class="col-md-3 mb-4">
+            <img src="../Sources/logo.png" alt="Service Planet Logo" class="footer-logo mb-3">
+            <br>
+            <a href="#" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin LinkedIn-logo"></i>
+            </a>
+          </div>
+          <!-- Secciones de enlaces -->
+          <div class="col-md-2 mb-4">
+            <h6 class="Section-title text-white fw-bold">NAVIGATION</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Lifecycle of Electronics</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Use Cases</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Client Portal</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="Section-title text-white fw-bold">RESOURCES</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">History</a></li>
+              <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Quality Systems</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="Section-title text-white fw-bold">CONTACT US</h6>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Postal Address:</strong></li>
+              <li class="footer-Address">Stuttgartstraat 8<br>3047 AS Rotterdam</li><br>
+              <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Goods Address:</strong></li>
+              <li class="footer-Address">Bristolstraat 7<br>3047 AB Rotterdam</li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong><br>
+            <a href="mailto:info@ask.serviceplanet.nl" class="text-light text-decoration-none">info@ask.serviceplanet.nl</a></p>
+            <p><i class="bi bi-telephone-fill"></i> <strong>Telephone:</strong><br> +31 10 4008200</p>
+          </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="d-flex flex-column flex-md-row justify-content-between text-secondary small">
+          <p class="mb-2 mb-md-0">© 2025 Service Planet. All Rights Reserved</p>
+          <div>
+            <a href="#" class="text-decoration-none text-secondary me-3">Terms and Conditions</a>
+            <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="Script/AllService.js"></script>
 </body>
