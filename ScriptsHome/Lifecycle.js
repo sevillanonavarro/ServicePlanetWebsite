@@ -181,6 +181,10 @@ imageContainer.appendChild(newSvg);
 
 
 function createZoomGroupPhase2(idx) {
+
+  svg.querySelectorAll('.hover-area').forEach(area => {
+    area.style.pointerEvents = '';
+  });
   
   const group = document.createElementNS("http://www.w3.org/2000/svg","g");
   group.classList.add("zoom-group-p2");
@@ -216,7 +220,10 @@ function createZoomGroupPhase2(idx) {
 svg.querySelectorAll('.hover-area').forEach(poly => {
   
   poly.addEventListener('click', () => {
-    
+
+    svg.querySelectorAll('.hover-area').forEach(area => {
+      area.style.pointerEvents = 'none';
+    });
     const idx = poly.dataset.index;
     const src = imageReplacements[idx];
     if (!src) return;
