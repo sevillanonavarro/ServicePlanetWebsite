@@ -20,6 +20,9 @@
     max-width: 120px;
   }
 /*Menu Services*/
+.container {
+  position: relative;
+}
 .service-slider-container {
   display: flex;
   align-items: center;
@@ -34,6 +37,18 @@
   scrollbar-width: none;; /* ajusta este valor según el tamaño de los botones */
 }
 
+.tab-button {
+  min-width: 215px;
+
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  font-size: 1.3em;
+  font-weight: 500;
+  white-space: normal;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .service-tabs {
   display: flex;
   flex-wrap: nowrap;
@@ -44,21 +59,8 @@
   display: none;
 }
 
-.tab-button {
-  min-width: 160px;
-  margin: 0 4px;
-  padding: 12px 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 4px;
-  font-weight: 500;
-  white-space: normal;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.tab-button.active,
 .tab-button:hover {
-  background-color: #17a2b8;
+  background-color: #29bdef;
   color: white;
 }
   
@@ -75,11 +77,10 @@
   /* Contenedor blanco encima del fondo azul */
   .mid-line {
     position: absolute;
-    top: 25%; /* Ubica justo al final de la sección */
     left: 50%;
     transform: translateX(-50%);
     width: 1px; /* Grosor de la línea */
-    height: 730%; /* Largo hacia abajo */
+    height: 97%; /* Largo hacia abajo */
     background-color: #29bdef;
     z-index: 0;
     pointer-events: none;

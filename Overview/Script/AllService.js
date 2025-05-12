@@ -1,11 +1,11 @@
 const tabsWrapper = document.querySelector('.service-tabs-wrapper');
   const tabButtons = document.querySelectorAll('.tab-button');
-  const tabWidth = tabButtons[0].offsetWidth + 8; // botón + margen
+  const tabWidth = tabButtons[0].offsetWidth + 1; // botón + margen
 
   function getScrollAmount() {
     const width = window.innerWidth;
 
-    if (width >= 1200) return tabWidth * 5; // pantallas grandes
+    if (width >= 1200) return tabWidth * 1; // pantallas grandes
     if (width >= 768) return tabWidth * 3;  // pantallas medianas
     return tabWidth * 1;                    // pantallas pequeñas
   }
