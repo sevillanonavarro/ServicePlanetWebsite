@@ -149,14 +149,14 @@
   }
 
   .slider-light::before{
-    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f8f9fa);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f3f3f3);
   }
 
   .slider-light::after{
-    background: linear-gradient(to right, rgba(255, 255, 255, 0),#f8f9fa);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#f3f3f3);
   }
   .slider-sales::before{
-    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f8f9fa);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#f3f3f3f3);
   }
 
   .slider-sales::after{

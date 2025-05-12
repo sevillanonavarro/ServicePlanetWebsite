@@ -19,46 +19,48 @@
     margin: 0 auto 10px;
     max-width: 120px;
   }
-  .slider-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  #sliderTrack {
-    width: max-content;
-    transition: transform 0.5s ease;
-  }
-  
-  .slider-group {
-    min-width: 100%;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .nav-item .nav-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid #29bdef;
-    border-radius: 50px;
-    color: #29bdef;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .nav-pills-wrapper ul {
-    display: flex;
-    gap: 1rem;
-    padding: 0 1rem;
-    margin: 0;
-    list-style: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .nav-pills-wrapper .nav-item {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
-  
+/*Menu Services*/
+.service-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* <- Esto centrará todo horizontalmente */
+  gap: 10px; /* Opcional: añade espacio entre los botones de flecha y el carrusel */
+
+}
+.service-tabs-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 43%;
+  scrollbar-width: none;; /* ajusta este valor según el tamaño de los botones */
+}
+
+.service-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.service-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-button {
+  min-width: 160px;
+  margin: 0 4px;
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-weight: 500;
+  white-space: normal;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #17a2b8;
+  color: white;
+}
   
   /* El div decorativo azul que sobresale en la esquina inferior derecha */
   .accent-box-par{

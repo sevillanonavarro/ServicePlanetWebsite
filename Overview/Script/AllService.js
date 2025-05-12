@@ -1,26 +1,25 @@
-const track = document.getElementById('sliderTrack');
-  const nextBtn = document.getElementById('nextBtn');
-  const prevBtn = document.getElementById('prevBtn');
+const tabsWrapper = document.querySelector('.service-tabs-wrapper');
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabWidth = tabButtons[0].offsetWidth + 8; // botón + margen
 
-  let currentSlide = 0;
+  function getScrollAmount() {
+    const width = window.innerWidth;
 
-  nextBtn.addEventListener('click', () => {
-    const totalGroups = track.children.length;
-    if (currentSlide < totalGroups - 1) {
-      currentSlide++;
-      updateSlider();
-    }
-  });
-
-  prevBtn.addEventListener('click', () => {
-    if (currentSlide > 0) {
-      currentSlide--;
-      updateSlider();
-    }
-  });
-
-  function updateSlider() {
-    track.style.transform = `translateX(-${100 * currentSlide}%)`;
+    if (width >= 1200) return tabWidth * 5; // pantallas grandes
+    if (width >= 768) return tabWidth * 3;  // pantallas medianas
+    return tabWidth * 1;                    // pantallas pequeñas
   }
 
+  document.getElementById('scrollLeft').addEventListener('click', () => {
+    tabsWrapper.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+  });
+
+  document.getElementById('scrollRight').addEventListener('click', () => {
+    tabsWrapper.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+  });
+
+  // (Opcional) actualizar tamaño al redimensionar
+  window.addEventListener('resize', () => {
+    // Si cambias el diseño con media queries, puedes recalcular aquí si hace falta
+  });
 
