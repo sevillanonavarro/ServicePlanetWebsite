@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({   
+  once: true          // ← aquí: anima solo 1 vez
+});
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
   
@@ -21,7 +23,18 @@ AOS.init();
     
 
     
-  
+    const toggle = document.querySelector('.language-selector .dropdown-toggle');
+    const menu   = document.querySelector('.language-menu');
+    
+    toggle.addEventListener('click', e => {
+      e.stopPropagation();
+      menu.classList.toggle('show');
+    });
+    
+    // para cerrar al hacer click fuera
+    document.addEventListener('click', () => {
+      menu.classList.remove('show');
+    });
     
 
 

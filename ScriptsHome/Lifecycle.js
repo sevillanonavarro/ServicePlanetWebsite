@@ -451,3 +451,43 @@ function rotateCenterTo(target) {
   // 6) Guarda el nuevo ángulo
   centerImg.dataset.angle = angle.toString();
 }
+
+
+function triggerSequentialHover(containerSvg, zoomLayerSelector, groupClass, delay = 700) { // Cambio el delay a 1000 (1 segundo)
+  const zLayer = containerSvg.querySelector(zoomLayerSelector);
+  const polys = Array.from(containerSvg.querySelectorAll('.hover-area'));
+
+  polys.forEach((poly, i) => {
+    const idx = poly.dataset.index;
+    const group = zLayer.querySelector(`.${groupClass}[data-index="${idx}"]`);
+    const scale = (groupClass === 'zoom-group-p2' && scaleFactorsPhase2[idx]) 
+      ? scaleFactorsPhase2[idx] 
+      : 1.2;
+
+    group.style.setProperty('--hover-scale', scale);
+
+    setTimeout(() => {
+      // Añadir clase hovered
+      zLayer.appendChild(group);
+      void group.getBoundingClientRect();
+      group.classList.add('hovered');
+
+      // Quitar hover después de un momento
+      setTimeout(() => {
+        group.classList.remove('hovered');
+      }, delay - 50); // duración del "hover"
+    }, i * delay);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  Object.entries(transformOrigins).forEach(([idx, { x, y }]) => {
+    const g = svg.querySelector(`.zoom-group[data-index="${idx}"]`);
+    if (g) g.style.transformOrigin = `${x}px ${y}px`;
+  });
+
+  applyHover(svg, '#zoom-layer', 'zoom-group');
+
+  // Trigger hover secuencial al cargar
+  triggerSequentialHover(svg, '#zoom-layer', 'zoom-group');
+});

@@ -1,285 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../StylesHome/Footer.css">
-    <link rel="stylesheet" href="../StylesHome/Header.css">
-    <link rel="stylesheet" href="styles/AllUseCase.css">
-    <link rel="stylesheet" href="../StylesHome/LifecycleSection.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <title>All Uses Cases</title>
+  <meta charset="UTF-8">
+  <title>Service Planet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../StylesHome/Footer.css">
+  <link rel="stylesheet" href="../StylesHome/Header.css">
+  <link rel="stylesheet" href="../StylesHome/LifecycleSection.css">
+  <link rel="stylesheet" href="./styles/AllUseCase.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
 <body>
-  <!--PRESALES-->
-  <section class="py-5 ">
-    <div class="container text-center">
-      <diV class="">
-        <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
-        <h1 class=" mb-5"><span class="gradient-text">PRE</span>-SALES</h1>  
-      </diV> 
-      <!-- SLIDER CONTAINER -->
-      <div class="slider-container slider-white">
-        <div class="card-slider">
-  
-          <!-- Use Case 1 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 1</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-  
-          <!-- Use Case 2 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 2</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> MediaMarkt</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-  
-          <!-- Use Case 3 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
 
-        </div>
+  <div class="background-shape"></div>
+
+
+
+
+  <div class="top-bar-wrapper" data-aos="fade-left" data-aos-duration="1500">
+    <div class="top-bar-inner">
+      <div class="language-selector">
+        <a href="#" class="dropdown-toggle" id="languageDropdown">
+          <i class="bi bi-globe"></i> English
+        </a>
+        <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
+          <li><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> English</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> French</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> German</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> Spanish</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> Dutch</a></li>
+        </ul>
       </div>
-  
-      <!-- Botones de navegación -->
-      <div id="select-exit" class="buttons-select mt-4"></div>
     </div>
-  </section>
+  </div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom" data-aos="fade-down"  data-aos-duration="1200">
+  <div class="navbar-container">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img id="logoHead" src="../Sources/ServicePlanetLogo.png" alt="Logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="menuToggle">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div  class="collapse navbar-collapse" id="mainNav" >
+      <ul class="navbar-nav flex-grow-1 d-flex justify-content-between me-auto mb-2 mb-lg-0 ms-4">
+        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+
+        <!-- Dropdown con submenú lateral -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#lifecycleSection">
+            LIFECYCLE <i class="bi bi-caret-down-fill ms-1"></i>
+          </a>
+          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
+            <li class="dropdown-submenu has-sub">
+              <a href="#">END OF LIFE</a>
+              <div class="sub-content">
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Sit amet consectetur</a></li>
+                  <li><a href="#">Adipiscing elit</a></li>
+                  <li><a href="#">Sed do tempor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-submenu has-sub">
+              <a href="#">PRE SALES</a>
+              <div class="sub-content">
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Sit amet consectetur</a></li>
+                  <li><a href="#">Adipiscing elit</a></li>
+                  <li><a href="#">Sed do tempor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-submenu has-sub">
+              <a href="#">SALES</a>
+              <div class="sub-content">
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Sit amet consectetur</a></li>
+                  <li><a href="#">Adipiscing elit</a></li>
+                  <li><a href="#">Sed do tempor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-submenu has-sub">
+              <a href="#">USE</a>
+              <div class="sub-content">
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Sit amet consectetur</a></li>
+                  <li><a href="#">Adipiscing elit</a></li>
+                  <li><a href="#">Sed do tempor</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Otros dropdowns simples -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="../Overview/UsesCaseOverview.html">
+            USE CASES <i class="bi bi-caret-down-fill ms-1"></i>
+          </a>
+          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
+            <li class="dropdown-submenu has-sub">
+              <a href="../Use Cases/BreakFixService.html">USE CASE 1</a>
+            </li>
+            <li class="dropdown-submenu has-sub">
+              <a href="#">USE CASE 2</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="../Overview/ServicesOverview.html">
+            SERVICES <i class="bi bi-caret-down-fill ms-1"></i>
+          </a>
+          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
+            <li class="dropdown-submenu has-sub">
+              <a href="../Services/Cyric.html">Cyric</a>
+            </li>
+            <li class="dropdown-submenu has-sub">
+              <a href="#">SERVICE 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Contact/Contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <button type="button" class="client-portal-btn">
+          <i class="bi bi-person-fill"></i> CLIENT PORTAL
+        </button>
+        <a href="https://nl.linkedin.com/company/service-planet" target="_blank" rel="noopener">
+          <i class="bi bi-linkedin" style="font-size: 24px; color: white;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+ <!-- BODY OF THE HOME -->
+
+
+ <section class="position-relative section-wrapper" id="lifecycleSection">
+
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <!-- Left content -->
+      <div class="col-md-5 text-md-start text-center px-4 left-content" data-aos="fade-right"  data-aos-duration="1500">
+        <div class="d-flex align-items-center justify-content-md-start justify-content-center flex-md-row flex-column logo-line mb-4">
+          <img src="../Sources/LogoSmall.png" alt="Service Planet Logo" class="me-3 mb-md-0 mb-2" style="height: 40px;">
+          <span class="logo-text">SERVICE PLANET</span>
+          <div class="line d-md-block d-none"></div>
+        </div>
+        <h1 class="fw-bold mb-4">
+          <span class="highlight, gradient-text">FAST SOLUTIONS</span><br>
+          FOR YOUR BUSINESS<br>
+          TECHNOLOGY
+        </h1>
+        <a href="../index.html#servicesSection" class="btn btn-gradient">LEARN MORE →</a>
+      </div>
+
+      <!-- Right content -->
+      <div class="col-md-6 text-center px-4 right-content" data-aos="zoom-in" data-aos-duration="1000" >
+        <div class="svg-container">
+          <img src="../Sources/image-removebg-preview.png" data-aos="fade-up"  alt="Use Case Diagram" class="img-fluid diagram">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mid-line"></div>
+
+</section>
+
+
+ <section class="py-5 ">
+  <div class="container text-center">
+    <diV class="">
+      <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
+      <h1 class=" mb-5"><span class="gradient-text">PRE</span>-SALES</h1>  
+    </diV> 
+    <!-- SLIDER CONTAINER -->
+    <div class="slider-container slider-white">
+      <div class="card-slider">
+
+        <!-- Use Case 1 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 1</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 2 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 2</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> MediaMarkt</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 3 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div id="select-exit" class="buttons-select mt-4"></div>
+  </div>
+</section>
+  
+<!-- SALES Section -->
+<section class="bg-light py-5 position-relative">
+  <div class="skew-bg"></div>
+  <div class="container">
+    <h1 class="contact-title"><span class="gradient-text ms-2">SALES</span> <div class="gray-line"></div></h1>
+    <!-- SLIDER CONTAINER -->
+    <div class="slider-container slider-sales">
+      <div class="card-slider">
     
-  <!-- SALES Section -->
-  <section class="bg-light py-5 position-relative">
-    <div class="skew-bg"></div>
-    <div class="container">
-      <h1 class="contact-title"><span class="gradient-text ms-2">SALES</span> <div class="gray-line"></div></h1>
-      <!-- SLIDER CONTAINER -->
-      <div class="slider-container slider-sales">
-        <div class="card-slider">
-      
-          <!-- Use Case 1 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 1</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+        <!-- Use Case 1 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 1</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
             </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
           </div>
-      
-          <!-- Use Case 2 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 2</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> MediaMarkt</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-      
-          <!-- Use Case 3 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Use Case 4 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Use Case 5 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
         </div>
-      </div>
-      
-      <!-- Botones de navegación -->
-      <div id="select-exit" class="buttons-select mt-4 botones-blanco"></div>
-    </div>
-  </section>
-
-
-  <!--Use Section-->
-  <section class="py-5 ">
-    <div class="container text-center">
-      <diV class="py-5">
-        <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
-        <h1 class="mb-5">USE</h1>
-      </diV>      
-      <!-- SLIDER CONTAINER -->
-      <div class="slider-container slider-white">
-        <div class="card-slider">
-      
-          <!-- Use Case 1 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">Modern workplace management</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> PCI</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B2C</p>
-                <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-      
-          <!-- Use Case 2 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">Break fix service</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Bechtle</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B2C</p>
-                <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-      
-          <!-- Use Case 3 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-              
-          <!-- Use Case 4 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Use Case 5 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border  mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 3</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-      
-        </div>
-      </div>
-      <!-- Botones de navegación -->
-      <div class="buttons-select mt-4"></div>
-    </div>
-  </section>
     
-  <!-- END OF LIFE Section -->
-  <section class="py-5 bg-light ">
-    <div class="container">
-      <h1 class="contact-title mb-5"><span class="gradient-text me-2">END OF </span>LIFE <div class="gray-line"></div></h1>
-      
-      <!-- SLIDER CONTAINER -->
-      <div class="slider-container slider-light">
-        <div class="card-slider">
-      
-          <!-- Use Case 1 -->
-          <div class="slide">
-            <div class="container-card p-5 bg-white border mx-auto">
-              <div class="tag-blue"></div>
-              <div class="content-wrapper">
-                <h4 class="fw-bold mb-0">USE CASE 1</h4>
-                <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
-                <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
-                <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
-              </div>
-              <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+        <!-- Use Case 2 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 2</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> MediaMarkt</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
             </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
           </div>
-      
+        </div>
+    
+        <!-- Use Case 3 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 4 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 5 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Botones de navegación -->
+    <div id="select-exit" class="buttons-select mt-4 botones-blanco"></div>
+  </div>
+</section>
+
+
+<!--Use Section-->
+<section class="py-5 ">
+  <div class="container text-center">
+    <diV class="py-5">
+      <img src="../Sources/LogoSmall.png" alt="LogoSmall" class="img-logosmall">
+      <h1 class="mb-5">USE</h1>
+    </diV>      
+    <!-- SLIDER CONTAINER -->
+    <div class="slider-container slider-white">
+      <div class="card-slider">
+    
+        <!-- Use Case 1 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">Modern workplace management</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> PCI</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B2C</p>
+              <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    
+        <!-- Use Case 2 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">Break fix service</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Bechtle</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B2C</p>
+              <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    
+        <!-- Use Case 3 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+            
+        <!-- Use Case 4 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 5 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border  mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <!-- Botones de navegación -->
+    <div class="buttons-select mt-4"></div>
+  </div>
+</section>
+  
+<!-- END OF LIFE Section -->
+<section class="py-5 bg-light ">
+  <div class="container">
+    <h1 class="contact-title mb-5"><span class="gradient-text me-2">END OF </span>LIFE <div class="gray-line"></div></h1>
+    
+    <!-- SLIDER CONTAINER -->
+    <div class="slider-container slider-light">
+      <div class="card-slider">
+    
+        <!-- Use Case 1 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 1</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Hardware diagnostics and secure data wipe in refurbished laptop resale workflows</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!-- Botones de navegación -->
+    <div id="select-exit" class="buttons-select mt-4"></div>
+  </div>
+</section>
+
+
+
+  <footer class="bg-dark text-light pt-5 pb-3 footer">
+    <div class="container">
+      <div class="row text-sm-start text-center">
+        <!-- Logo y LinkedIn -->
+        <div class="col-md-3 mb-4">
+          <img src="Sources/logo.png" alt="Service Planet Logo" class="footer-logo mb-3">
+          <br>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin LinkedIn-logo"></i>
+          </a>
+        </div>
+        <!-- Secciones de enlaces -->
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold">NAVIGATION</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Lifecycle of Electronics</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Use Cases</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Client Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold">RESOURCES</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">History</a></li>
+            <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Quality Systems</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold">CONTACT US</h6>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Postal Address:</strong></li>
+            <li class="footer-Address">Stuttgartstraat 8<br>3047 AS Rotterdam</li><br>
+            <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Goods Address:</strong></li>
+            <li class="footer-Address">Bristolstraat 7<br>3047 AB Rotterdam</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong><br>
+          <a href="mailto:info@ask.serviceplanet.nl" class="text-light text-decoration-none">info@ask.serviceplanet.nl</a></p>
+          <p><i class="bi bi-telephone-fill"></i> <strong>Telephone:</strong><br> +31 10 4008200</p>
         </div>
       </div>
-      
-      <!-- Botones de navegación -->
-      <div id="select-exit" class="buttons-select mt-4"></div>
+      <hr class="border-secondary">
+      <div class="d-flex flex-column flex-md-row justify-content-between text-secondary small">
+        <p class="mb-2 mb-md-0">© 2025 Service Planet. All Rights Reserved</p>
+        <div>
+          <a href="#" class="text-decoration-none text-secondary me-3">Terms and Conditions</a>
+          <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <script src="Script/AllUsesCase.js"></script>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../ScriptsHome/Menu.js"></script>
+  <script src="../ScriptsHome/Services.js"></script>
+  <script src="../ScriptsHome/Certs.js"></script>
+  <script src="../ScriptsHome/About.js"></script>
+  <script src="../ScriptsHome/Timeline.js"></script>
+  <script src="./Script/AllUsesCase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

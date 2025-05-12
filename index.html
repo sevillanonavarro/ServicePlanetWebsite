@@ -16,8 +16,7 @@
   <link rel="stylesheet" href="./StylesHome/Timeline.css">
   <link rel="stylesheet" href="./StylesHome/LifecyclePhases.css">
   <link rel="stylesheet" href="./StylesHome/LifecycleP2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
 <body>
 
@@ -26,22 +25,31 @@
 
 
 
-  <!-- Top bar -->
-<div class="top-bar-wrapper" data-aos="fade-left"  data-aos-duration="1500">
-
-  <div class="top-bar-inner">
-    <a href="#">History</a>
-    <a href="#">About Us</a>
-    <a href="#">Quality Systems</a>
-    <span class="top-bar-separator">|</span>
-    <a href="#"><i class="bi bi-globe"></i> English</a>
+  <div class="top-bar-wrapper" data-aos="fade-left" data-aos-duration="1500">
+    <div class="top-bar-inner">
+      <a href="#aboutus">About Us</a>
+      <a href="#history">History</a>
+      <a href="#quality">Quality Systems</a>
+      <span class="top-bar-separator">|</span>
+      <div class="language-selector">
+        <a href="#" class="dropdown-toggle" id="languageDropdown">
+          <i class="bi bi-globe"></i> English
+        </a>
+        <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
+          <li><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> English</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> French</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> German</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> Spanish</a></li>
+          <li><a href="#"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> Dutch</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
 
 <!-- Main Navbar -->
 <nav class="navbar navbar-expand-lg navbar-custom" data-aos="fade-down"  data-aos-duration="1200">
   <div class="navbar-container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
       <img id="logoHead" src="Sources/ServicePlanetLogo.png" alt="Logo">
     </a>
 
@@ -57,7 +65,7 @@
 
         <!-- Dropdown con submenú lateral -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#">
+          <a class="nav-link " href="#lifecycleSection">
             LIFECYCLE <i class="bi bi-caret-down-fill ms-1"></i>
           </a>
           <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
@@ -110,7 +118,7 @@
 
         <!-- Otros dropdowns simples -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#">
+          <a class="nav-link " href="./Overview/UsesCaseOverview.html">
             USE CASES <i class="bi bi-caret-down-fill ms-1"></i>
           </a>
           <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
@@ -125,7 +133,10 @@
 
 
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#">
+
+
+
+          <a class="nav-link " href="./Overview/ServicesOverview.html">
             SERVICES <i class="bi bi-caret-down-fill ms-1"></i>
           </a>
           <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
@@ -144,7 +155,7 @@
         <button type="button" class="client-portal-btn">
           <i class="bi bi-person-fill"></i> CLIENT PORTAL
         </button>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+        <a href="https://nl.linkedin.com/company/service-planet" target="_blank" rel="noopener">
           <i class="bi bi-linkedin" style="font-size: 24px; color: white;"></i>
         </a>
       </div>
@@ -159,7 +170,7 @@
 
 
 
- <section class="position-relative section-wrapper">
+ <section class="position-relative section-wrapper" id="lifecycleSection">
 
   <div class="container py-5">
     <div class="row align-items-center g-5">
@@ -175,11 +186,11 @@
           FOR YOUR BUSINESS<br>
           TECHNOLOGY
         </h1>
-        <a href="#" class="btn btn-gradient">LEARN MORE →</a>
+        <a href="#servicesSection" class="btn btn-gradient">LEARN MORE →</a>
       </div>
 
       <!-- Right content -->
-      <div class="col-md-7 text-center px-4 right-content">
+      <div class="col-md-7 text-center px-4 right-content" data-aos="zoom-in" data-aos-duration="1000" >
         <div class="svg-container">
           <svg id="svg-clicker" viewBox="0 0 100 100"
                xmlns="http://www.w3.org/2000/svg"
@@ -253,8 +264,8 @@
 
 
 
-<div class="container-fluid py-5 servicesContainer">
-  <div class="container p-0">
+<div class="container-fluid py-5 servicesContainer" id="servicesSection" >
+  <div class="container p-0" data-aos="fade-up" data-aos-duration="1500">
     <div class="section-title text-center">
       <img src="./Sources/LogoSmall.png" alt="Service Planet Logo" style="height: 30px; margin-bottom: 1rem;">
       <p>WHAT WE DO</p>
@@ -375,7 +386,7 @@
 
 
 
-<section class="about-section d-flex align-items-center position-relative">
+<section class="about-section d-flex align-items-center position-relative" id="aboutus">
   
   <div class="skew-bg" ></div>
   <span class="hor-line"></span>
@@ -384,7 +395,7 @@
       
       <!-- Column de imágenes -->
       <div class="col-lg-6 d-flex justify-content-center" >
-        <div class="images-wrapper d-flex">
+        <div class="images-wrapper d-flex" data-aos="fade-right" data-aos-duration="1500">
           <!-- Columna izquierda (2 imágenes) -->
           <div class="d-flex flex-column me-2 position-relative">
             <img src="./Sources/ImgServiciosHome.jpeg" class="img-fluid mb-3 shadow rounded" alt="Image 1" />
@@ -404,7 +415,7 @@
       <!-- Column de texto -->
       <div class="col-lg-6 text-column">
         
-        <div class="px-4">
+        <div class="px-4" data-aos="fade-up" data-aos-duration="1500">
           <h6 class="subtitleAboutus text-uppercase fw-bold  position-relative">
             WHO WE ARE
           </h6>
@@ -433,9 +444,9 @@
 
 
 
-<section class="py-5 contieneAbout">
+<section class="py-5 contieneAbout" id="history">
   <div class="mid-line-history"></div>
-  <div class="container text-center text-dark ">
+  <div class="container text-center text-dark " data-aos="fade-up" data-aos-duration="1500">
 
     <div class="section-title text-center">
       <img src="./Sources/LogoSmall.png" alt="Service Planet Logo" style="height: 30px; margin-bottom: 1rem;">
@@ -495,23 +506,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="award-section container-fluid py-5">
-  <div class="container">
+<div class="award-section container-fluid py-5" id="quality">
+  <div class="container" data-aos="fade-up" data-aos-duration="1500">
     <div class="row align-items-center">
       
       <!-- Columna de texto -->

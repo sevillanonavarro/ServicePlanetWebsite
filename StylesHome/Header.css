@@ -152,21 +152,28 @@ body {
   top: 0;
 }
 
-  .client-portal-btn {
-    background-color: #333;
-    color: white;
-    padding: 6px 28px;
-    border-radius: 4px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    border: none;
-    margin-left: 20%;
-    white-space: nowrap;
-    min-width: 180px;
-    justify-content: center;
-  }
+.client-portal-btn {
+  background-color: #333;
+  color: white;
+  padding: 6px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  margin-left: 20%;
+  white-space: nowrap;
+  min-width: 180px;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.client-portal-btn:hover {
+  background-color: #555;            /* tono ligeramente más claro */
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
   .linkedin-icon {
     width: 24px;
@@ -299,10 +306,31 @@ body {
   color: #333;
   font-size: 13.5px;
 }
+.d-flex.align-items-center a {
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* 2) Color base y transición del icono */
+.d-flex.align-items-center a i.bi-linkedin {
+  color: white;
+  font-size: 24px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* 3) Hover: escala y color LinkedIn */
+.d-flex.align-items-center a:hover i.bi-linkedin {
+  color: #0A66C2;
+  transform: scale(1.1);
+}
 
 
 
   @media (max-width: 991px) {
+    .d-flex.align-items-center a i.bi-linkedin {
+      color: black !important;
+    }
     .navbar-toggler {
       display: block;
     }
@@ -393,3 +421,99 @@ body {
     }
   }
   
+  .language-selector {
+    position: relative;
+  }
+  
+  .language-selector .dropdown-toggle {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+ /* --------------------------------------------------
+   1) Contenedor: transición de apertura normal
+   -------------------------------------------------- */
+.language-menu {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+  transform-origin: top right;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  pointer-events: none;
+}
+
+/* Cuando recibe .show: entra */
+.language-menu.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* --------------------------------------------------
+   2) Ítems: animación en keyframes pero pausados
+   -------------------------------------------------- */
+.language-menu li {
+  /* keyframe preparado, pero no se inicia */
+  animation: fadeInItem 0.25s forwards ease-out;
+  animation-delay: calc(0.05s * var(--i));
+  animation-play-state: paused;          /* PAUSADO por defecto */
+  opacity: 0;                            /* estado inicial */
+}
+
+/* Al recibir .show en el menú, lanzamos las animaciones */
+.language-menu.show li {
+  animation-play-state: running;
+}
+
+/* --------------------------------------------------
+   3) Definición de keyframes
+   -------------------------------------------------- */
+@keyframes fadeInItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+  .language-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    
+    /* transición suave de fondo y transform */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 6px 16px;
+  }
+  
+  .language-menu li a:hover {
+    background-color: #e6f7ff;       /* suave tono azul */
+    border-radius: 4px;
+  }
+  
+  
+  .language-menu img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+
+  .top-bar-inner {
+    overflow: visible !important;
+  }
+  
+  /* Aseguramos que el contenedor relativo y el menú estén arriba */
+  .language-selector {
+    position: relative; 
+    z-index: 3000;      /* más alto que navbar y top-bar */
+  }
+  
+  .language-menu {
+    z-index: 3001;      /* un punto por encima del selector */
+  }
