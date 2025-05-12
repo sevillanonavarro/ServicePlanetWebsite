@@ -15,7 +15,6 @@ body {
 }
 
   .top-bar-wrapper {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -60,7 +59,6 @@ body {
   .navbar-custom {
     position: relative; /* o static si prefieres */
     width: 100%;
-    margin-top: 40px; /* compensa el espacio de la top-bar si es necesario */
   }
   
   .nav-link {
