@@ -15,6 +15,7 @@ body {
 }
 
   .top-bar-wrapper {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -435,13 +436,17 @@ body {
  /* --------------------------------------------------
    1) Contenedor: transición de apertura normal
    -------------------------------------------------- */
-.language-menu {
-  opacity: 0;
-  transform: translateY(-10px) scale(0.95);
-  transform-origin: top right;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-  pointer-events: none;
-}
+   .language-menu {
+    position: absolute !important;  /* Asegura que flote fuera del flujo normal */
+    top: 100%;                      /* Bajo el toggle */
+    right: 0;                       /* Ajusta según donde quieras alinear */
+    z-index: 10001 !important;      /* ¡Muy arriba! */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transform-origin: top right;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: none;
+  }
 
 /* Cuando recibe .show: entra */
 .language-menu.show {
@@ -449,6 +454,12 @@ body {
   transform: translateY(0) scale(1);
   pointer-events: auto;
 }
+
+.language-selector {
+  position: relative;
+  z-index: 10000;       /* Mucho más alto que cualquier navbar u otros elementos */
+}
+
 
 /* --------------------------------------------------
    2) Ítems: animación en keyframes pero pausados
