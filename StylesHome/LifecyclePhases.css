@@ -18,7 +18,7 @@
     pointer-events: auto;
   }
   .zoom-group.hovered {
-    transform: scale(1.12);
+    transform: scale(1.05);
   }
 
   .hover-area {

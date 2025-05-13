@@ -7,7 +7,7 @@ transform-box: fill-box;
 pointer-events: auto;
 }
 .zoom-group.hovered {
-transform: scale(1.12);
+transform: scale(1.05);
 }
 
 .zoom-group-p2{
@@ -19,7 +19,7 @@ pointer-events: auto;
 }
 
 .zoom-group-p2.hovered {
-transform: scale(1.09);
+transform: scale(1.05);
 }
 
 .hover-area {
