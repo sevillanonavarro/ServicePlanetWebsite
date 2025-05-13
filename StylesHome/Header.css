@@ -11,7 +11,8 @@ body {
 .gradient-text {
   background-image: linear-gradient(118deg, #098da1 0%, #29bdef 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
   .top-bar-wrapper {

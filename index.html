@@ -33,14 +33,14 @@
       <span class="top-bar-separator">|</span>
       <div class="language-selector">
         <a href="#" class="dropdown-toggle" id="languageDropdown">
-          <i class="bi bi-globe"></i> English
+          <i class="bi bi-globe"></i> {{idioma-seleccionado}}
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> English</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> French</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> German</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> Spanish</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> Dutch</a></li>
+          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> {{idioma-ingles}}</a></li>
+          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> {{idioma-Fances}}</a></li>
+          <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> {{idioma-aleman}}</a></li>
+          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> {{idioma-Espanol}}</a></li>
+          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> {{idioma-Neerlandes}}</a></li>
         </ul>
       </div>
     </div>
@@ -61,7 +61,7 @@
 
     <div  class="collapse navbar-collapse" id="mainNav" >
       <ul class="navbar-nav flex-grow-1 d-flex justify-content-between me-auto mb-2 mb-lg-0 ms-4">
-        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">{{home}}</a></li>
 
         <!-- Dropdown con submenú lateral -->
         <li class="nav-item dropdown">
@@ -580,5 +580,7 @@
   <script src="./ScriptsHome/Timeline.js"></script>
   <script src="./ScriptsHome/Lifecycle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tolgee/web/dist/tolgee-web.umd.min.js"></script>
+  <script src="language.js"></script>
 </body>
 </html>
