@@ -20,6 +20,9 @@
     max-width: 120px;
   }
 /*Menu Services*/
+.container {
+  position: relative;
+}
 .service-slider-container {
   display: flex;
   align-items: center;
@@ -30,8 +33,21 @@
 .service-tabs-wrapper {
   overflow-x: auto;
   scroll-behavior: smooth;
-  width: 43%;
+  width: clamp(250px, 80vw, 1100px); /* 👈 Esta línea es clave */
   scrollbar-width: none;; /* ajusta este valor según el tamaño de los botones */
+}
+
+.tab-button {
+  min-width: clamp(150px, 20vw, 183.2px); 
+  text-decoration: none;
+  color: #464747;
+  padding: 10px 20px;
+  border: 1px solid #dee2e6;
+  font-size: 1.3em;
+  font-weight: 500;
+  white-space: normal;
+  transition: background-color 0.3s, color 0.3s;
+  justify-content: center; /* Alinea horizontalmente el texto */
 }
 
 .service-tabs {
@@ -44,24 +60,31 @@
   display: none;
 }
 
-.tab-button {
-  min-width: 160px;
-  margin: 0 4px;
-  padding: 12px 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 4px;
-  font-weight: 500;
-  white-space: normal;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.tab-button.active,
 .tab-button:hover {
-  background-color: #17a2b8;
+  background-color: #29bdef;
   color: white;
 }
-  
+
+.scroll-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scroll-button:hover i {
+  color: #29bdef;
+}
+
+.scroll-button i {
+  background-color: white;
+  color: inherit;
+  font-size: 2rem;
+}
   /* El div decorativo azul que sobresale en la esquina inferior derecha */
   .accent-box-par{
     width: 100px;
@@ -75,11 +98,10 @@
   /* Contenedor blanco encima del fondo azul */
   .mid-line {
     position: absolute;
-    top: 25%; /* Ubica justo al final de la sección */
     left: 50%;
     transform: translateX(-50%);
     width: 1px; /* Grosor de la línea */
-    height: 730%; /* Largo hacia abajo */
+    height: 97%; /* Largo hacia abajo */
     background-color: #29bdef;
     z-index: 0;
     pointer-events: none;
