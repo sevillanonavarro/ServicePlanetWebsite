@@ -48,6 +48,7 @@
   white-space: normal;
   transition: background-color 0.3s, color 0.3s;
   justify-content: center; /* Alinea horizontalmente el texto */
+  background-color: white;
 }
 
 .service-tabs {
@@ -59,10 +60,30 @@
 .service-tabs::-webkit-scrollbar {
   display: none;
 }
-
+.tab-activate,
 .tab-button:hover {
   background-color: #29bdef;
   color: white;
+}
+.desactivate {
+  display: none;
+}
+
+.categorie {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: block;
+}
+
+.categorie.desactivate {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .scroll-button {

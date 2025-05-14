@@ -22,3 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.querySelectorAll('.tab-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetCategory = button.getAttribute('data-categorie');
+
+    // 1. Ocultar/mostrar categorías
+    document.querySelectorAll('.categorie').forEach(cat => {
+      const catCategory = cat.getAttribute('data-categorie');
+      cat.classList.toggle('desactivate', catCategory !== targetCategory);
+    });
+
+    // 2. Gestionar la clase 'tab-activate' en los botones
+    document.querySelectorAll('.tab-button').forEach(btn => {
+      btn.classList.remove('tab-activate');
+    });
+
+    button.classList.add('tab-activate');
+  });
+});
+
