@@ -120,3 +120,20 @@
         padding: 10px;
       }
   }
+
+  /* Keyframes de la animación: fade + slide desde la derecha */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Clase que activa la animación */
+.slider-animate {
+  animation: fadeInSlide 0.5s ease forwards;
+}

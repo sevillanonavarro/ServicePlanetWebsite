@@ -73,7 +73,7 @@
     top: 33%;
     right: 0; /* Comienza desde el borde izquierdo */
     width: 32%; /* El ancho de la línea es 100% del viewport */
-    max-width: 100%; /* Asegura que no se haga más ancha que el viewport */
+    max-width: 15%; /* Asegura que no se haga más ancha que el viewport */
     height: 2px;
     background-color: #00aaff;
     transform: translateY(-50%);
@@ -151,7 +151,11 @@
     background-color: #fff;
     z-index: -1;
 }
+
 @media (max-width: 991px) {
+    .hor-line{
+        display: none;
+    }
     .skew-bg {
         position: absolute;
         top: 43%;
