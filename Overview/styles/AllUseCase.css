@@ -20,10 +20,10 @@
     position: absolute;
     top: 0;
     left: 65%;
-    width: 150%;
+    width: 35%;
     height: 100%;
-    background-image: linear-gradient(110deg, #098da1 2%, #29bdef 10%);
-    transform: skewX(-20deg);
+    background-image: linear-gradient(110deg, #098da1 20%, #29bdef 30%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
     transform-origin: top left;
     z-index: 0;
     pointer-events: none;

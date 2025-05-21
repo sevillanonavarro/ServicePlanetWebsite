@@ -8,7 +8,7 @@ const tolgee = Tolgee()
     // ## you should never leak your API key                     ##
     // ## remove it in for production publicly accessible site   ##
     // ############################################################
-    apiKey: 'tgpak_gjpts5ruhfuwknrrhe2ggobtmy3gmytpmjvgwyrrnmzxg',
+    apiKey: 'tgpak_gjptezdomvwgw3ttmfuweobxnbvxg3jqnftdmn3jmzrds',
     apiUrl: 'http://localhost:8080',
     defaultLanguage: 'en',
     observerType: 'text',
