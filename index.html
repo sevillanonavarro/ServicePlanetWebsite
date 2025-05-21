@@ -27,20 +27,20 @@
 
   <div class="top-bar-wrapper" data-aos="fade-left" data-aos-duration="1500">
     <div class="top-bar-inner">
-      <a href="#aboutus">About Us</a>
-      <a href="#history">History</a>
-      <a href="#quality">Quality Systems</a>
+      <a href="#aboutus" data-text="secondmenu_aboutus">About Us</a>
+      <a href="#history" data-text="secondmenu_history">History</a>
+      <a href="#quality" data-text="secondmenu_qualitysystems">Quality Systems</a>
       <span class="top-bar-separator">|</span>
       <div class="language-selector">
         <a href="#" class="dropdown-toggle" id="languageDropdown">
-          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i> 
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> {{idioma-ingles}}</a></li>
-          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> {{idioma-Fances}}</a></li>
-          <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> {{idioma-aleman}}</a></li>
-          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> {{idioma-Espanol}}</a></li>
-          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> {{idioma-Neerlandes}}</a></li>
+          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
+          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
         </ul>
       </div>
     </div>
@@ -61,18 +61,18 @@
 
     <div  class="collapse navbar-collapse" id="mainNav" >
       <ul class="navbar-nav flex-grow-1 d-flex justify-content-between me-auto mb-2 mb-lg-0 ms-4">
-        <li class="nav-item"><a class="nav-link active" href="#">{{home}}</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#" data-text="firstmenu_home"></a></li>
 
         <!-- Dropdown con submenú lateral -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#lifecycleSection">
+          <a class="nav-link " href="#lifecycleSection" data-text="firstmenu_lifecycle">
             LIFECYCLE
           </a>
         </li>
 
         <!-- Otros dropdowns simples -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="./Overview/UsesCaseOverview.html">
+          <a class="nav-link " href="./Overview/UsesCaseOverview.html" data-text="firstmenu_usecases">
             USE CASES 
           </a>
         </li>
@@ -82,16 +82,16 @@
 
 
 
-          <a class="nav-link " href="./Overview/ServicesOverview.html">
+          <a class="nav-link " href="./Overview/ServicesOverview.html" data-text="firstmenu_services">
             SERVICES
           </a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./Contact/Contact.html">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Contact/Contact.html" data-text="firstmenu_contact">CONTACT</a></li>
       </ul>
 
       <div class="d-flex align-items-center gap-3">
         <button type="button" class="client-portal-btn">
-          <i class="bi bi-person-fill"></i> CLIENT PORTAL
+          <i class="bi bi-person-fill"></i> <div data-text="firstmenu_portalbutton"></div>
         </button>
         <a href="https://nl.linkedin.com/company/service-planet" target="_blank" rel="noopener">
           <i class="bi bi-linkedin" style="font-size: 24px; color: white;"></i>
@@ -120,11 +120,11 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight, gradient-text">FAST SOLUTIONS</span><br>
+          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
           FOR YOUR BUSINESS<br>
           TECHNOLOGY
         </h1>
-        <a href="#servicesSection" class="btn btn-gradient">LEARN MORE →</a>
+        <a href="#servicesSection" class="btn btn-gradient" data-text="button_learnmore">LEARN MORE →</a>
       </div>
 
       <!-- Right content -->
@@ -363,31 +363,30 @@
       <div class="col-lg-6 text-column">
         
         <div class="px-4" data-aos="fade-up" data-aos-duration="1500">
-          <h6 class="subtitleAboutus text-uppercase fw-bold  position-relative">
+          <h6 class="subtitleAboutus text-uppercase fw-bold  position-relative" data-text="aboutus_1">
             WHO WE ARE
           </h6>
           <h2 class="display-6 fw-bold mb-4 position-relative">
-            ABOUT <span class="gradient-text companyTextLinea position-relative">SERVICE PLANET</span>
-            
+            <span data-text="aboutus_2">ABOUT</span> <span class="gradient-text companyTextLinea position-relative">SERVICE PLANET</span>
           </h2>
           <p class="mb-4 textAboutus">
-            <div class="textAboutus">
+            <div class="textAboutus" data-text="aboutus_4">
             Service Planet is a leading European partner in lifecycle management for consumer electronics, celebrating 20 years of continuous innovation. Founded in 2005 by a passionate team aiming to improve computer repairs, Service Planet has always believed in the power of open source and in-house development. Our proprietary ERP system, developed and refined internally, enables us to seamlessly bundle all our services—from installation and repair to refurbishment and recycling—into a single, efficient solution. As a “white label” service provider, we empower our clients to maintain their own brand identity while we deliver reliable, high-quality support behind the scenes.
             </div>
             <br>
-            <div class="textAboutus">
+            <div class="textAboutus" data-text="aboutus_5">
             We are committed to making digital life easier and more sustainable for everyone. By extending the lifespan of devices, focusing on conscious refurbishing and recycling, and optimizing every step for efficiency, we deliver tangible benefits: higher customer satisfaction, lower costs, and a reduced environmental footprint. Our core values—innovation, quality, integrity, focus, and loyalty—drive us every day, supported by a hands-on mentality and a strong focus on safety and security. Service Planet is not just a service provider, but a trusted partner for the future.
             </div>
             <br>
-            <div class="textAboutus">
+            <div class="textAboutus" data-text="aboutus_6">
             We help our customers maintain, align, and improve information and communication solutions in a connected world, with convenience and reliability for our clients and their customers at the center.
             </div>
 
 
           </p>
           <div class="highlight-box mt-3 p-3 border-4 d-flex align-items-center gap-2">
-            <strong>COMPANY OPERATES ACROSS THE EUROPEAN UNION <img src="./Sources/eu.png" alt="EU" width="30" height="30" /></strong>
-            
+            <strong> <span data-text="aboutus_7">COMPANY OPERATES ACROSS THE EUROPEAN UNION</span> <img src="./Sources/eu.png" alt="EU" width="30" height="30" ></strong>
+
           </div>
         </div>
       </div>
@@ -408,8 +407,8 @@
 
     <div class="section-title text-center">
       <img src="./Sources/LogoSmall.png" alt="Service Planet Logo" style="height: 30px; margin-bottom: 1rem;">
-      <p>COMPANY HISTORY</p>
-      <h2>OUR <span class="gradient-text">HISTORY</span></h2>
+      <p data-text="history_1">COMPANY HISTORY</p>
+      <h2><span data-text="history_2">OUR</span>  <span class="gradient-text">HISTORY</span></h2>
     </div>
 
     <div class="timeline-wrapper position-relative" id="slider0">

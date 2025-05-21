@@ -1,24 +1,40 @@
-const { Tolgee, InContextTools, FormatSimple, BackendFetch } = window['@tolgee/web'];
-const tolgee = Tolgee()
-  .use(InContextTools())
-  .use(FormatSimple())
-  .use(BackendFetch())
-  .init({
-    // ############################################################
-    // ## you should never leak your API key                     ##
-    // ## remove it in for production publicly accessible site   ##
-    // ############################################################
-    apiKey: 'tgpak_gjptezdomvwgw3ttmfuweobxnbvxg3jqnftdmn3jmzrds',
-    apiUrl: 'http://localhost:8080',
-    defaultLanguage: 'en',
-    observerType: 'text',
-    observerOptions: { inputPrefix: '{{', inputSuffix: '}}' },
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const LANG_KEY = 'user-lang';
+  let currentLang = localStorage.getItem(LANG_KEY) || 'en';
 
-tolgee.run()
+  // Función que carga el JSON y traduce la página
+  function loadTranslations(lang) {
+    fetch(`./Translations/${lang}.json`)
+      .then(res => {
+        if (!res.ok) throw new Error(`No se pudo cargar ${lang}.json`);
+        return res.json();
+      })
+      .then(translations => {
+        document.querySelectorAll('[data-text]').forEach(el => {
+          const key = el.getAttribute('data-text');
+          if (translations[key]) {
+            el.textContent = translations[key];
+          } else {
+            console.warn(`Clave "${key}" no existe en ${lang}.json`);
+          }
+        });
+      })
+      .catch(err => console.error(err));
+  }
 
-document.querySelectorAll('.lang-option').forEach(option => {
-    option.addEventListener('click', function (e) {
-      tolgee.changeLanguage(option.getAttribute('data-value'));
+  // Inicializamos al cargar
+  loadTranslations(currentLang);
+
+  // Listener para cambio de idioma
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.addEventListener('click', e => {
+      e.preventDefault();
+      const newLang = opt.getAttribute('data-value');
+      if (newLang === currentLang) return;  // nada cambia
+
+      currentLang = newLang;
+      localStorage.setItem(LANG_KEY, newLang);
+      loadTranslations(newLang);
     });
   });
+});
