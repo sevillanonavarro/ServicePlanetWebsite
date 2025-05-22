@@ -29,7 +29,7 @@
 .line {
   width: 30%;
   height: 2px;
-  background-color: #00aaff;
+  background-color: #29bdef;
   flex-grow: 0;
 }
 
@@ -89,7 +89,7 @@ h1 {
   transform: translateX(-50%);
   width: 2px; /* Grosor de la línea */
   height: 80px; /* Largo hacia abajo */
-  background-color: #00aaff;
+  background-color: #29bdef;
   z-index: 10;
   pointer-events: none;
 }

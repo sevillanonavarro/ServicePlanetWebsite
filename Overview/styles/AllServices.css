@@ -117,12 +117,12 @@
   }
   
   /* Contenedor blanco encima del fondo azul */
-  .mid-line {
+  .mid-line-body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 1px; /* Grosor de la línea */
-    height: 97%; /* Largo hacia abajo */
+    width: 2px; /* Grosor de la línea */
+    height: 96%; /* Largo hacia abajo */
     background-color: #29bdef;
     z-index: 0;
     pointer-events: none;
