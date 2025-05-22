@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesCSS/contact.css" />
+    <link rel="stylesheet" href="stylesCSS/description.css" />
+    <link rel="stylesheet" href="stylesCSS/service.css" />
+    <link rel="stylesheet" href="stylesCSS/usecase.css" />
+    <link rel="stylesheet" href="../StylesHome/LifecycleSection.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--Algo falta relacionado a esto-->
+    <link rel="stylesheet" href="../StylesHome/Footer.css">
+    <link rel="stylesheet" href="../StylesHome/Header.css">
+    <link rel="icon" href="../Sources/LogoSmall.png">
+    <title>Refurbishment Recycling</title>
+</head>
+<body>
+  <div class="background-shape"></div>
+
+
+  <div class="top-bar-wrapper" data-aos="fade-left" data-aos-duration="1500">
+    <div class="top-bar-inner">
+      <a href="../index.html#aboutus" data-text="secondmenu_aboutus">About Us</a>
+      <a href="../index.html#history" data-text="secondmenu_history">History</a>
+      <a href="../index.html#quality" data-text="secondmenu_qualitysystems">Quality Systems</a>
+      <span class="top-bar-separator">|</span>
+      <div class="language-selector">
+        <a href="#" class="dropdown-toggle" id="languageDropdown">
+          <i class="bi bi-globe"></i>  <span id="selected_language"></span>
+        </a>
+        <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
+          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
+          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom" data-aos="fade-down"  data-aos-duration="1200">
+  <div class="navbar-container">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img id="logoHead" src="../Sources/ServicePlanetLogo.png" alt="Logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="menuToggle">
+    <span class="navbar-toggler-icon"></span>
+</button>
+    <div  class="collapse navbar-collapse" id="mainNav" >
+      <ul class="navbar-nav flex-grow-1 d-flex justify-content-between me-auto mb-2 mb-lg-0 ms-4">
+        <li class="nav-item"><a class="nav-link" href="../index.html" data-text="firstmenu_home"></a></li>
+        <!-- Dropdown con submenú lateral -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="../index.html#lifecycleSection" data-text="firstmenu_lifecycle">
+            LIFECYCLE
+          </a>
+        </li>
+        <!-- Otros dropdowns simples -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="../Overview/UsesCaseOverview.html" data-text="firstmenu_usecases">
+            USE CASES 
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="../Overview/ServicesOverview.html" data-text="firstmenu_services">
+            SERVICES
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../Contact/Contact.html" data-text="firstmenu_contact">CONTACT</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <button type="button" class="client-portal-btn">
+          <i class="bi bi-person-fill"></i> <div data-text="firstmenu_portalbutton"></div>
+        </button>
+        <a href="https://nl.linkedin.com/company/service-planet" target="_blank" rel="noopener">
+          <i class="bi bi-linkedin" style="font-size: 24px; color: white;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+ <section class="position-relative section-wrapper" id="lifecycleSection">
+
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <!-- Left content -->
+      <div class="col-md-5 text-md-start text-center px-4 left-content" data-aos="fade-right"  data-aos-duration="1500">
+        <div class="d-flex align-items-center justify-content-md-start justify-content-center flex-md-row flex-column logo-line mb-4">
+          <img src="../Sources/LogoSmall.png" alt="Service Planet Logo" class="me-3 mb-md-0 mb-2" style="height: 40px;">
+          <span class="logo-text">SERVICE PLANET</span>
+          <div class="line d-md-block d-none"></div>
+        </div>
+        <h1 class="fw-bold mb-4">
+          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
+          FOR YOUR BUSINESS<br>
+          TECHNOLOGY
+        </h1>
+      </div>
+
+      <!-- Right content -->
+      <div class="col-md-7 text-center px-4 right-content" data-aos="zoom-in" data-aos-duration="1000" >
+        <div class="svg-container">
+            <img class="diagram" src="../Sources/Phase 1.png" alt="">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mid-line" data-aos="fade-down" data-aos-duration="1500"></div>
+
+</section>
+
+
+<!-- Hero Section -->
+<section class="py-5 text-center position-relative overflow-hidden bg-white">
+  <!-- BLUE BACKGROUND -->
+  <div class="skew-bg"></div>
+
+  <div class="container position-relative py-5">
+    <div class="row align-items-center justify-content-center">
+      <!-- Image -->
+      <div class="col-md-6 image-container py-5">
+        <div class="framed-image" data-aos="fade-right" data-aos-duration="1500">
+          <div class="frame white"></div>
+          <img src="../Sources/Photos/cap.png" alt="Cyric hardware image" class="img-service" />
+          <div class="frame gray"></div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-md-5 mb-4 mb-md-0 text-md-start" data-aos="fade-left" data-aos-duration="1500">
+        <h1 class="fw-bold service-title">
+          CYRIC <img src="../Sources/LogoSmall.png" class="ms-3" />
+          <div class="hor-line"></div>
+        </h1>
+        <p class="text-muted cyric-text">
+          Welcome to the Cyric page-where every type of customer finds the right solution for professional computer management.
+           Whether you manage a single store, a large warehouse, an educational institution, or a nationwide retail chain, 
+           Cyric offers flexible options that fit your needs perfectly. Our team combines deep technical expertise with a proactive, 
+           service-oriented approach: we’re always ready to help, think along, and ensure your processes run smoothly. 
+           With Cyric, you benefit from efficient automation, clear reporting, and robust GDPR compliance, all supported by 
+           reliable hardware and responsive support. Experience how our commitment to quality, innovation, and customer satisfaction 
+           makes Cyric the trusted choice for organizations of every size
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Features Section -->
+<section class="bg-light card-section">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- WHAT IS CYRIC -->
+      <div class="col-md-6 position-relative">
+        <!-- Floating icon -->
+        <div class="icon-circle circle-left" data-aos="fade-up" data-aos-duration="1500">
+          <img src="../Sources/DetailServiceIcon1.png" alt="icon" />
+        </div>
+        <div class="p-5 bg-white text-center text-md-start shadow rounded custom-card" data-aos="fade-up" data-aos-duration="1500">
+          <h4 class="fw-bold mt-4">WHAT IS CYRIC?</h4>
+          <p>Cyric is a toolset with 6 functionalities:</p>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled feature-list">
+                <li>Cyric is an advanced platform for automating and managing computers within organizations</li>
+                <li>It supports tasks such as installing, wiping, and testing devices, regardless of brand or model.</li>
+                <li>Cyric operates largely automatically, enabling even non-IT staff to use it with ease</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled feature-list">
+                <li>A central portal provides real-time insight into the status and history of all devices.</li>
+                <li>The system is fully compliant with privacy and GDPR regulations</li>
+                <li>Cyric saves time and costs, making large-scale computer management reliable and future-proof.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-muted">
+            Cyric offers organizations an efficient, secure, and user-friendly way to manage large numbers of computers. With automation and clear reporting, you always have control over your IT environment. This makes professional computer management accessible to everyone.
+          </p>
+        </div>
+      </div>
+
+      <!-- WHY SHOULD I USE CYRIC -->
+      <div class="col-md-6 position-relative">
+        <!-- Floating icon -->
+        <div class="icon-circle circle-right" data-aos="fade-up" data-aos-duration="1500">
+          <img src="../Sources/DetailServiceIcon2.png" alt="icon"/>
+        </div>
+        <div class="p-5 bg-white text-center text-md-start shadow rounded custom-card" data-aos="fade-up" data-aos-duration="1500">
+          <h4 class="fw-bold mt-4">WHY SHOULD I USE CYRIC?</h4>
+          <p class="text-muted">
+            Cyric stands out as an all-in-one solution for organizations that need to process, prepare, or refurbish large numbers of computers quickly and with consistent quality. The platform is designed for high efficiency: once you start a task, Cyric handles the rest-unattended-so your staff can focus on other work, while minimizing the need for technical expertise. With automated workflows, GDPR-compliant reporting, and a professional, uniform process at every location, Cyric helps you save time, reduce costs, and deliver a better experience to your customers-making it the smart choice for any organization managing IT devices at scale
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Contact Information -->
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
+        <div class="title-container">
+          <h4>GET IN TOUCH <img src="../Sources/LogoSmall.png" class="ms-2"/></h4>
+          <h1 class="fw-bold contact-title">CONTACT <span class="gradient-text ms-2">US</span> <div class="gray-line"></div></h1>
+        </div>
+        <p class="mb-0 fs-5"><strong><i class="bi bi-geo-alt-fill me-2"></i>Postal Address:</strong></p>
+        <p class="mb-0 fs-5 ms-4">Stuttgartstraat 8, 3047 AS Rotterdam</p>
+        <hr>
+        <p class="mb-0 fs-5"><strong><i class="bi bi-envelope-fill me-2"></i>Email:</strong></p>
+        <p class="mb-0 fs-5 ms-4">info@ask.serviceplanet.nl</p>
+        <hr>
+        <p class="mb-0 fs-5"><strong><i class="bi bi-telephone-fill me-2"></i>Phone:</strong></p>
+        <p class="mb-0 fs-5 ms-4">+31 10 4080200</p>
+      </div>
+
+      <!-- Owner Card -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500">
+        <div class="p-5 rounded owner-card">
+          <h2 class="fw-bold mb-4 ms-5">MEET OUR OWNER</h2>
+          <div class="row align-items-center">
+            
+            <!-- Image column -->
+            <div class="col-lg-4">
+              <div class="circle-photo">
+                <img src="../Sources/Photos/castor.jfif" alt="Tim Ruissen" class="photo-circle">
+              </div>
+            </div>
+      
+            <!-- Info column -->
+            <div class="col-lg-8">
+              <h3 class="fw-bold mb-0">Tim Ruissen</h3>
+              <p class="mb-1 fs-5">Cyric Product Owner</p>
+              <p class="mb-1 fs-5 ms-3"><i class="bi bi-geo-alt-fill me-2"></i> Stuttgartstraat 8, 3047 AS Rotterdam</p>
+              <p class="mb-1 fs-5 ms-3"><i class="bi bi-telephone-fill me-2"></i> +1 (123) 456-7890</p>
+              <p class="mb-1 fs-5 ms-3"><i class="bi bi-envelope-fill me-2"></i> jhon@ask.serviceplanet.nl</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Use Cases Section -->
+<section class="py-5 " >
+  <div class="container text-center">
+    <h1 class="fw-bold mb-5"data-aos="fade-up" data-aos-duration="1500" >USE <span class="gradient-text" data-aos="fade-up" data-aos-duration="1500">CASES</span></h1>
+
+    <!-- SLIDER CONTAINER -->
+    <div class="slider-container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card-slider">
+
+        <!-- Use Case 1 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 1</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> PC Componentes</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">A leading electronics retailer wanted to offer customers a seamless experience when purchasing new computers, including optional services like device preparation, secure data erasure, and thorough hardware testing. With Cyric, every computer is automatically prepared for immediate use: devices are securely wiped of all previous data, tested for hardware and software integrity, and loaded with the latest updates-regardless of brand or model. This automated process enables the retailer to provide a full portfolio of in-store and after-sales services, such as certified data wiping and ready-to-use devices, all while ensuring privacy compliance and consistent quality. As a result, the retailer can differentiate itself with professional, reliable service and added value for every customer</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 2 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 2</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> MediaMarkt</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Auto scan & offline retailer selling electronics across Europe.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Use Case 3 -->
+        <div class="slide">
+          <div class="container-card p-5 bg-white border mx-auto">
+            <div class="tag-blue"></div>
+            <div class="content-wrapper">
+              <h4 class="fw-bold mb-0">USE CASE 3</h4>
+              <p class="mb-1 fs-6"><strong>Customer:</strong> Fnac</p>
+              <p class="mb-1 fs-6"><strong>Type of Setup:</strong> B2B</p>
+              <p class="text-muted fs-6">Products: Secure data erasure for mobile devices in trade-in programs.</p>
+            </div>
+            <a href="#" class="button-cases mt-auto">LEARN MORE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div id="select-exit" class="buttons-select mt-4" ></div>
+  </div>
+</section>
+
+  <footer class="bg-dark text-light pt-5 pb-3 footer">
+    <div class="container">
+      <div class="row text-sm-start text-center">
+        <!-- Logo y LinkedIn -->
+        <div class="col-md-3 mb-4">
+          <img src="../Sources/logo.png" alt="Service Planet Logo" class="footer-logo mb-3">
+          <br>
+          <a href="https://nl.linkedin.com/company/service-planet" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin LinkedIn-logo"></i>
+          </a>
+        </div>
+        <!-- Secciones de enlaces -->
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold" data-text="footer_text_navigation">NAVIGATION</h6>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-light text-decoration-none" data-text="footer_text_home">Home</a></li>
+            <li><a href="../index.html#lifecycleSection" class="text-light text-decoration-none" data-text="footer_text_lifecycle">Lifecycle</a></li>
+            <li><a href="../Overview/UsesCaseOverview.html" class="text-light text-decoration-none" data-text="footer_text_usecases">Use Cases</a></li>
+            <li><a href="../Overview/ServicesOverview.html" class="text-light text-decoration-none" data-text="footer_text_services">Services</a></li>
+            <li><a href="#" class="text-light text-decoration-none" data-text="footer_text_clientportal">Client Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold" data-text="footer_text_resources">RESOURCES</h6>
+          <ul class="list-unstyled">
+            <li><a href="../index.html#history" class="text-light text-decoration-none" data-text="footer_text_history">History</a></li>
+            <li><a href="../index.html#aboutus" class="text-light text-decoration-none" data-text="footer_text_aboutus">About Us</a></li>
+            <li><a href="../Contact/Contact.html" class="text-light text-decoration-none" data-text="footer_text_contact">Contact</a></li>
+            <li><a href="../index.html#quality" class="text-light text-decoration-none" data-text="footer_text_qualitysystems">Quality Systems</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="Section-title text-white fw-bold" data-text="footer_text_contactus">CONTACT US</h6>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill me-2"></i><strong data-text="contact_postal">Postal Address:</strong></li>
+            <li class="footer-Address">Stuttgartstraat 8<br>3047 AS Rotterdam</li><br>
+            <li><i class="bi bi-geo-alt-fill me-2"></i><strong data-text="contact_goods">Goods Address:</strong></li>
+            <li class="footer-Address">Bristolstraat 7<br>3047 AB Rotterdam</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <p><i class="bi bi-envelope-fill"></i> <strong data-text="contact_mail">Email:</strong><br>
+          <a href="mailto:info@ask.serviceplanet.nl" class="text-light text-decoration-none">info@ask.serviceplanet.nl</a></p>
+          <p><i class="bi bi-telephone-fill"></i> <strong data-text="contact_telephone">Telephone:</strong><br> +31 10 4008200</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="d-flex flex-column flex-md-row justify-content-between text-secondary small">
+        <p class="mb-2 mb-md-0">© 2025 Service Planet. All Rights Reserved</p>
+        <div>
+          <a href="#" class="text-decoration-none text-secondary me-3" data-text="footer_terms">Terms and Conditions</a>
+          <a href="#" class="text-decoration-none text-secondary" data-text="footer_privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../ScriptsHome/Menu.js"></script>
+  <script src="./javascript/service.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tolgee/web/dist/tolgee-web.umd.min.js"></script>
+  <script src="../languageREST.js"></script>
+</body>
+</html>
