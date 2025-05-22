@@ -14,27 +14,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
 <body>
-
   <div class="background-shape"></div>
-
-
 
 
   <div class="top-bar-wrapper" data-aos="fade-left" data-aos-duration="1500">
     <div class="top-bar-inner">
-      <a href="#aboutus">About Us</a>
-      <a href="#history">History</a>
-      <a href="#quality">Quality Systems</a>
+      <a href="../index.html#aboutus" data-text="secondmenu_aboutus">About Us</a>
+      <a href="../index.html#history" data-text="secondmenu_history">History</a>
+      <a href="../index.html#quality" data-text="secondmenu_qualitysystems">Quality Systems</a>
+      <span class="top-bar-separator">|</span>
       <div class="language-selector">
         <a href="#" class="dropdown-toggle" id="languageDropdown">
-          <i class="bi bi-globe"></i> English
+          <i class="bi bi-globe"></i>  <span id="selected_language"></span>
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"> English</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"> French</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/de.png" alt="German flag"> German</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"> Spanish</a></li>
-          <li><a href="#"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"> Dutch</a></li>
+          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
+          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
         </ul>
       </div>
     </div>
@@ -52,99 +50,32 @@
     aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="menuToggle">
     <span class="navbar-toggler-icon"></span>
 </button>
-
     <div  class="collapse navbar-collapse" id="mainNav" >
       <ul class="navbar-nav flex-grow-1 d-flex justify-content-between me-auto mb-2 mb-lg-0 ms-4">
-        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-
+        <li class="nav-item"><a class="nav-link" href="../index.html" data-text="firstmenu_home"></a></li>
         <!-- Dropdown con submenú lateral -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#lifecycleSection">
-            LIFECYCLE <i class="bi bi-caret-down-fill ms-1"></i>
+          <a class="nav-link " href="../index.html#lifecycleSection" data-text="firstmenu_lifecycle">
+            LIFECYCLE
           </a>
-          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
-            <li class="dropdown-submenu has-sub">
-              <a href="#">END OF LIFE</a>
-              <div class="sub-content">
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipiscing elit</a></li>
-                  <li><a href="#">Sed do tempor</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown-submenu has-sub">
-              <a href="#">PRE SALES</a>
-              <div class="sub-content">
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipiscing elit</a></li>
-                  <li><a href="#">Sed do tempor</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown-submenu has-sub">
-              <a href="#">SALES</a>
-              <div class="sub-content">
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipiscing elit</a></li>
-                  <li><a href="#">Sed do tempor</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown-submenu has-sub">
-              <a href="#">USE</a>
-              <div class="sub-content">
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipiscing elit</a></li>
-                  <li><a href="#">Sed do tempor</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
         </li>
-
         <!-- Otros dropdowns simples -->
         <li class="nav-item dropdown">
-          <a class="nav-link " href="../Overview/UsesCaseOverview.html">
-            USE CASES <i class="bi bi-caret-down-fill ms-1"></i>
+          <a class="nav-link " href="../Overview/UsesCaseOverview.html" data-text="firstmenu_usecases">
+            USE CASES 
           </a>
-          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
-            <li class="dropdown-submenu has-sub">
-              <a href="../Use Cases/BreakFixService.html">USE CASE 1</a>
-            </li>
-            <li class="dropdown-submenu has-sub">
-              <a href="#">USE CASE 2</a>
-            </li>
-          </ul>
         </li>
-
-
         <li class="nav-item dropdown">
-          <a class="nav-link " href="../Overview/ServicesOverview.html">
-            SERVICES <i class="bi bi-caret-down-fill ms-1"></i>
+          <a class="nav-link " href="../Overview/ServicesOverview.html" data-text="firstmenu_services">
+            SERVICES
           </a>
-          <ul class="dropdown-menu lifecycle-menu" aria-labelledby="lifecycleMenu">
-            <li class="dropdown-submenu has-sub">
-              <a href="../Services/Cyric.html">Cyric</a>
-            </li>
-            <li class="dropdown-submenu has-sub">
-              <a href="#">SERVICE 2</a>
-            </li>
-          </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./Contact/Contact.html">CONTACT</a></li>
+        <li class="nav-item active"><a class="nav-link" href="../Contact/Contact.html" data-text="firstmenu_contact">CONTACT</a></li>
       </ul>
 
       <div class="d-flex align-items-center gap-3">
         <button type="button" class="client-portal-btn">
-          <i class="bi bi-person-fill"></i> CLIENT PORTAL
+          <i class="bi bi-person-fill"></i> <div data-text="firstmenu_portalbutton"></div>
         </button>
         <a href="https://nl.linkedin.com/company/service-planet" target="_blank" rel="noopener">
           <i class="bi bi-linkedin" style="font-size: 24px; color: white;"></i>
@@ -153,13 +84,6 @@
     </div>
   </div>
 </nav>
-
-
-
- <!-- BODY OF THE HOME -->
-
-
-
 
  <section class="position-relative section-wrapper" id="lifecycleSection">
 
@@ -173,23 +97,22 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight, gradient-text">FAST SOLUTIONS</span><br>
+          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
           FOR YOUR BUSINESS<br>
           TECHNOLOGY
         </h1>
-        <a href="../index.html#servicesSection" class="btn btn-gradient">LEARN MORE →</a>
       </div>
 
       <!-- Right content -->
-      <div class="col-md-6 text-center px-4 right-content" data-aos="zoom-in" data-aos-duration="1000" >
+      <div class="col-md-7 text-center px-4 right-content" data-aos="zoom-in" data-aos-duration="1000" >
         <div class="svg-container">
-          <img src="../Sources/image-removebg-preview.png" data-aos="fade-up"  alt="Use Case Diagram" class="img-fluid diagram">
+            <img class="diagram" src="../Sources/Phase 1.png" alt="">
       </div>
       </div>
     </div>
   </div>
 
-  <div class="mid-line"></div>
+  <div class="mid-line" data-aos="fade-down" data-aos-duration="1500"></div>
 
 </section>
 
@@ -421,6 +344,7 @@
   <script src="../ScriptsHome/About.js"></script>
   <script src="../ScriptsHome/Timeline.js"></script>
   <script src="./contact.js"></script>
+  <script src="../languageREST.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
