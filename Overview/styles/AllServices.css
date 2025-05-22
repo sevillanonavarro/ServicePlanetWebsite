@@ -135,15 +135,14 @@
     text-decoration: none;
     border-radius: 25px;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
     border:2px solid #29bdef;
   }
   
   .button-cases:hover {
     background-color: #0079a1;
-    transform: translateY(-2px);
     color: #fff;
-    border:#0079a1;
+    border: 2px solid #0079a1;
   }
   
   .button-cases i {
