@@ -13,6 +13,8 @@
   #slider1{
     display: none;
   }
+
+
   .timeline-img {
     position: absolute;
     top: 0;
@@ -21,6 +23,9 @@
     height: 100%;
     object-fit: contain;
     z-index: 1;
+  }
+  .historyOur{
+    display: inline-block; /* o inline */
   }
   
   .floating-text {
