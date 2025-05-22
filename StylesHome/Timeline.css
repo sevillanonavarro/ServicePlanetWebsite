@@ -51,10 +51,15 @@
   }
   
   /* === POSICIONES PARA ESCRITORIO (horizontal) === */
-  .box-1 { top: 16%; left: 8%; }
-  .box-2 { top: 40%; left: 29%; }
-  .box-3 { top: 13%;  left: 52.2%; }
+  .box-1 { top: 10%; left: 8%; }
+  .box-2 { top: 42%; left: 31%; }
+  .box-3 { top: 7%;  left: 53%; }
   .box-4 { top: 40%; left: 74%; }
+
+  .box-5 { top: 21%; left: 8%; }
+  .box-6 { top: 42%; left: 31%; }
+  .box-7 { top: 19%;  left: 53%; }
+  .box-8 { top: 42%; left: 74%; }
 
   
   .timeline-arrow-btn {
@@ -78,7 +83,7 @@
   }
   
   /* === MOBILE (< 992px) con imagen vertical === */
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     .timeline-wrapper {
       aspect-ratio: 9 / 16;
     }
@@ -98,30 +103,81 @@
   
     /* Posiciones PERSONALIZADAS para imagen vertical */
     .box-1 {
-      top: 13.5%;
+      top: 10.5%;
       left: 7%; /* lado izquierdo */
     }
   
     .box-2 {
-      top: 34%;
+      top: 33%;
       left: 53%; /* lado derecho */
     }
   
     .box-3 {
-      top: 57%;
+      top: 56%;
       left: 7%; /* lado izquierdo */
     }
   
     .box-4 {
-      top: 81%;
+      top: 79%;
       left: 53%; /* lado derecho */
     }
+
+
+    .box-5 {
+      top: 15%;
+      left: 7%; /* lado izquierdo */
+    }
+  
+    .box-6 {
+      top: 35.5%;
+      left: 53%; /* lado derecho */
+    }
+  
+    .box-7 {
+      top: 60.5%;
+      left: 7%; /* lado izquierdo */
+    }
+  
+    .box-8 {
+      top: 82%;
+      left: 53%; /* lado derecho */
+    }
+
+    
   }
   
   @media (max-width: 768px) {
     .floating-text {
         width: 40%; /* más estrecho si quieres colocarlos a lados opuestos */
         font-size: 0.6rem;
+        padding: 10px;
+      }
+
+      .box-5 {
+        top: 13.5%;
+        left: 7%; /* lado izquierdo */
+      }
+    
+      .box-6 {
+        top: 33%;
+        left: 53%; /* lado derecho */
+      }
+    
+      .box-7 {
+        top: 59%;
+        left: 7%; /* lado izquierdo */
+      }
+    
+      .box-8 {
+        top: 80%;
+        left: 53%; /* lado derecho */
+      }
+  }
+
+  @media (max-width: 400px) {
+    .floating-text {
+        width: 40%; /* más estrecho si quieres colocarlos a lados opuestos */
+        font-size: 0.4rem;
         padding: 10px;
       }
   }
