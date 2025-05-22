@@ -103,6 +103,10 @@ body {
     align-items: center;
     gap: 6px;
   }
+
+  .link-services{
+    text-decoration: none;
+  }
   
   .btn-learn svg path {
     stroke: #00aeef;
