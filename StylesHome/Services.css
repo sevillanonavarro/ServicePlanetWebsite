@@ -13,7 +13,9 @@ body {
     margin-bottom: 2.5rem;
     padding-top: 1.5rem;
   }
-  
+  .texto_negro{
+    color: #333 !important;
+  }
   .section-title p {
     text-transform: uppercase;
     color: #aaa;
