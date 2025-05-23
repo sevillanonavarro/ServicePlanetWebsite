@@ -179,7 +179,13 @@ body {
     width: 24px;
     height: 24px;
   }
+  .headLinked{
+    margin-left: 100%;
+  }
 
+  .link-services{
+    text-decoration: none;
+  }
   #logoHead {
     height: 100px;
     margin-top: -50px;
