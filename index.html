@@ -705,72 +705,73 @@
 
 <section class="py-5 contieneAbout" id="history">
   <div class="mid-line-history"></div>
-  <div class="container text-center text-dark " data-aos="fade-up" data-aos-duration="1500">
+  <div class="container text-center text-dark" data-aos="fade-up" data-aos-duration="1500">
 
     <div class="section-title text-center">
       <img src="./Sources/LogoSmall.png" alt="Service Planet Logo" style="height: 30px; margin-bottom: 1rem;">
       <p data-text="history_1">COMPANY HISTORY</p>
-      <h2> <div data-text="history_2" class="historyOur">OUR</div>  <span class="gradient-text" data-text="history_3">HISTORY</span></h2>
+      <h2>
+        <div data-text="history_2" class="historyOur">OUR</div>
+        <span class="gradient-text" data-text="history_3">HISTORY</span>
+      </h2>
     </div>
 
-    <div class="timeline-wrapper position-relative" id="slider0">
-      <img src="./Sources/Historia.png" class="timeline-img" alt="Timeline">
-
-      <!-- Textos flotantes -->
-      <div class="floating-text box-1">
-        <p data-text="history_timeline_1">
-          Service Planet was founded in April 2005 by a team with extensive B2B and B2C experience from Dunnet ITC. Starting at Achterklooster in Rotterdam, the company quickly attracted major retailers as clients thanks to its personal approach and strong focus on customer satisfaction.
-          </p>
-      </div>
-      <div class="floating-text box-2">
-        <p data-text="history_timeline_2">A move to Korte Stadionweg in Rotterdam South marked the beginning of internal software development and a commitment to open source technology. In-house developers created Melissan, the next-generation lifecycle management ERP system.
-        </p>
-      </div>
-      <div class="floating-text box-3">
-        <p data-text="history_timeline_3">Service Planet relocated to Stuttgartstraat and Bristolstraat in Rotterdam, expanding to over 1,000 m² of warehouse and technical workspace and 450 m² of office space. This new facility enabled the company to grow into a professional lifecycle management business, scaling from a handful of employees to several dozen.
-        </p>
-      </div>
-      <div class="floating-text box-4">
-        <p data-text="history_timeline_4">The company further professionalized with the introduction of new systems, such as the Cyric test tool for IT equipment and dedicated warehouse and workflow management apps. This period also saw Service Planet expand into the Benelux market.
-        </p>
-      </div>
+    <!-- Contenedor principal flex con flechas -->
+    <div class="timeline-flex-container">
       
-    </div>
-
-    <div class="timeline-wrapper position-relative" id="slider1">
-      <img src="./Sources/Historia.png" class="timeline-img" alt="Timeline">
-
-      <!-- Textos flotantes -->
-      <div class="floating-text box-5">
-        <p data-text="history_timeline_5">Service Planet continued its European growth, adding Portugal and Spain to its network, followed by the UK, Sweden, Denmark, Croatia, and Serbia.
-        </p>
-      </div>
-      <div class="floating-text box-6">
-        <p data-text="history_timeline_6">Leveraging its experience and systems, Service Planet entered the B2B market, serving resellers, MSPs, system integrators, vendors, OEMs, and resellers. The COVID-19 pandemic accelerated this shift, resulting in successful full lifecycle management solutions for business clients.</p>
-      </div>
-      <div class="floating-text box-7">
-        <p data-text="history_timeline_7">The company took its next step by partnering with HP and Ingram to launch HP Workspace ProConnect, a complete Device-as-a-Service (DaaS) offering for the business market.</p>
-      </div>
-      <div class="floating-text box-8">
-        <p data-text="history_timeline_8">Service Planet focused even more on quality, achieving an NPS score above 70 for the first time—an impressive milestone in IT services. The company also pursued ISO and TÜV certification and won an award for HP Workspace ProConnect.
-        </p>
-      </div>
-    </div>
-    <div class="timeline-arrows d-flex justify-content-center gap-3 mt-3">
+      <!-- Flecha izquierda -->
       <button class="timeline-arrow-btn" aria-label="Previous">
-        <svg xmlns="http://www.w3.org/2000/svg"  width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
           <path d="M17 12H6M10 7l-5 5 5 5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
+
+      <!-- Contenido central: sliders -->
+      <div class="timeline-wrapper-container">
+        <div class="timeline-wrapper position-relative" id="slider0">
+          <img src="./Sources/Historia.png" class="timeline-img" alt="Timeline">
+          <div class="floating-text box-1">
+            <p data-text="history_timeline_1">Service Planet was founded in April 2005 by a team with extensive B2B and B2C experience from Dunnet ITC. Starting at Achterklooster in Rotterdam, the company quickly attracted major retailers as clients thanks to its personal approach and strong focus on customer satisfaction.</p>
+          </div>
+          <div class="floating-text box-2">
+            <p data-text="history_timeline_2">A move to Korte Stadionweg in Rotterdam South marked the beginning of internal software development and a commitment to open source technology. In-house developers created Melissan, the next-generation lifecycle management ERP system.</p>
+          </div>
+          <div class="floating-text box-3">
+            <p data-text="history_timeline_3">Service Planet relocated to Stuttgartstraat and Bristolstraat in Rotterdam, expanding to over 1,000 m² of warehouse and technical workspace and 450 m² of office space. This new facility enabled the company to grow into a professional lifecycle management business, scaling from a handful of employees to several dozen.</p>
+          </div>
+          <div class="floating-text box-4">
+            <p data-text="history_timeline_4">The company further professionalized with the introduction of new systems, such as the Cyric test tool for IT equipment and dedicated warehouse and workflow management apps. This period also saw Service Planet expand into the Benelux market.</p>
+          </div>
+        </div>
+
+        <div class="timeline-wrapper position-relative" id="slider1" style="display: none;">
+          <img src="./Sources/Historia.png" class="timeline-img" alt="Timeline">
+          <div class="floating-text box-5">
+            <p data-text="history_timeline_5">Service Planet continued its European growth, adding Portugal and Spain to its network, followed by the UK, Sweden, Denmark, Croatia, and Serbia.</p>
+          </div>
+          <div class="floating-text box-6">
+            <p data-text="history_timeline_6">Leveraging its experience and systems, Service Planet entered the B2B market, serving resellers, MSPs, system integrators, vendors, OEMs, and resellers. The COVID-19 pandemic accelerated this shift, resulting in successful full lifecycle management solutions for business clients.</p>
+          </div>
+          <div class="floating-text box-7">
+            <p data-text="history_timeline_7">The company took its next step by partnering with HP and Ingram to launch HP Workspace ProConnect, a complete Device-as-a-Service (DaaS) offering for the business market.</p>
+          </div>
+          <div class="floating-text box-8">
+            <p data-text="history_timeline_8">Service Planet focused even more on quality, achieving an NPS score above 70 for the first time—an impressive milestone in IT services. The company also pursued ISO and TÜV certification and won an award for HP Workspace ProConnect.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flecha derecha -->
       <button class="timeline-arrow-btn" aria-label="Next">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
           <path d="M7 12h11M13 7l5 5-5 5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
+
     </div>
-    
   </div>
 </section>
+
 
 
 
