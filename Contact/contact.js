@@ -1,14 +1,25 @@
-const form = document.getElementById("contact-form");
+function sendEmail() {
+  const form = document.getElementById('contact-form');
+  const first = form.first_name.value;
+  const last = form.last_name.value;
+  const email = form.email.value;
+  const phone = form.number.value;
+  const message = form.message.value;
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    console.log('aqui');
-    fetch("https://script.google.com/macros/s/AKfycbxWdNDy39Gk9TWDhU20HOz1yHNcwwAJhDKKcyIOZ0RcVsXslYyudkQy2TjIoal_yrAIJA/exec", {
-      method: "POST",
-      body: new FormData(form),
-    })
-    .then(response => console.log("Message sent!"))
-    .catch(error => console.log("Error sending message"));
-    
-    form.reset();
-  });
+  const subject = encodeURIComponent("New Contact Message from " + first + " " + last);
+  const body = encodeURIComponent(
+    `You have received a new message from your website contact form:\n\n` +
+    `───────────────────────────────\n` +
+    `👤 Name: ${first} ${last}\n` +
+    `📧 Email: ${email}\n` +
+    `📞 Phone: ${phone}\n` +
+    `───────────────────────────────\n\n` +
+    `📝 Message:\n${message}\n\n` +
+    `───────────────────────────────`
+  );
+
+  const mailtoLink = `mailto:info.website@ask.serviceplanet.nl?subject=${subject}&body=${body}`;
+
+  window.location.href = mailtoLink;
+  return false; // evitar envío real del formulario
+}
