@@ -153,3 +153,10 @@ fill: #333;
   dominant-baseline: middle;
 }
 
+.phase2-text-link {
+  fill: #007bff;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}

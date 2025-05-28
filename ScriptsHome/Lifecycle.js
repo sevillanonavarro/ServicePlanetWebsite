@@ -90,7 +90,8 @@ const phase2Extras = {
 const ballText = {
   'ball-1-0': {
     title: 'Título 1-0',
-    items: ['Texto 1A', 'Texto 1B', 'Texto 1C']
+    items: ['Texto 1A', 'Texto 1B', 'Texto 1C'],
+    link: "Services/Cyric.html"
   },
   'ball-2-0': {
     title: 'Título 2-0',
@@ -378,7 +379,7 @@ function addPhase2Extras(idx) {
         // Título
         const titleEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
         titleEl.setAttribute("x", "1250");
-        titleEl.setAttribute("y", "1050");
+        titleEl.setAttribute("y", "1000");
         titleEl.setAttribute("text-anchor", "middle");
         titleEl.setAttribute("class", "phase2-text-title");
         titleEl.setAttribute("data-text", `ballText.${key}.title`);
@@ -387,21 +388,39 @@ function addPhase2Extras(idx) {
 
         // Items
         data.items.forEach((text, i) => {
-          const line = document.createElementNS("http://www.w3.org/2000/svg", "text");
-          line.setAttribute("x", "1250");
-          line.setAttribute("y", `${1100 + i * 30}`);
-          line.setAttribute("text-anchor", "middle");
-          line.setAttribute("class", "phase2-text-item");
-          line.setAttribute("data-text", `ballText.${key}.items[${i}]`);
-          line.textContent = text;
-          textGroup.appendChild(line);
+          if (i === 3 && data.link) {
+            const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", data.link);
+            link.setAttribute("target", "_blank");
+        
+            const linkText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            linkText.setAttribute("x", "1250");
+            linkText.setAttribute("y", `${1100 + i * 30}`);
+            linkText.setAttribute("text-anchor", "middle");
+            linkText.setAttribute("class", "phase2-text-link");
+            linkText.setAttribute("data-text", `ballText.${key}.items[${i}]`);
+            linkText.textContent = text;
+        
+            link.appendChild(linkText);
+            textGroup.appendChild(link);
+          } else {
+            const line = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            line.setAttribute("x", "1250");
+            line.setAttribute("y", `${1100 + i * 180}`);
+            line.setAttribute("text-anchor", "middle");
+            line.setAttribute("class", "phase2-text-item");
+            line.setAttribute("data-text", `ballText.${key}.items[${i}]`);
+            line.textContent = text;
+            textGroup.appendChild(line);
+          }
         });
+        
 
-        // ⚠️ Llama a la función de traducción para aplicar `data-text`
         if (typeof loadTranslations === 'function') {
           const lang = localStorage.getItem('user-lang') || 'en';
           loadTranslations(lang);
         }
+        
         
       }
 
