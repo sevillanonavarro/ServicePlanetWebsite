@@ -139,7 +139,7 @@ fill: #333;
 
 .phase2-text-title {
   fill: #00aeef; /* color visible */
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
   dominant-baseline: middle;
@@ -153,3 +153,10 @@ fill: #333;
   dominant-baseline: middle;
 }
 
+.phase2-text-link {
+  fill: #007bff;
+  font-size: 3vw;
+  font-family: 'Arial', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
