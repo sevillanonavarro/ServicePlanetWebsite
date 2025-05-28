@@ -379,34 +379,34 @@ function addPhase2Extras(idx) {
         // Título
         const titleEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
         titleEl.setAttribute("x", "1250");
-        titleEl.setAttribute("y", "1000");
+        titleEl.setAttribute("y", "1050");
         titleEl.setAttribute("text-anchor", "middle");
         titleEl.setAttribute("class", "phase2-text-title");
         titleEl.setAttribute("data-text", `ballText.${key}.title`);
         titleEl.textContent = data.title;
         textGroup.appendChild(titleEl);
-
-        // Items
+      
+        // Mostrar solo los dos primeros textos como normales y el tercero como enlace si hay
         data.items.forEach((text, i) => {
-          if (i === 3 && data.link) {
+          if (i === 2 && data.link) {
             const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
             link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", data.link);
             link.setAttribute("target", "_blank");
-        
+      
             const linkText = document.createElementNS("http://www.w3.org/2000/svg", "text");
             linkText.setAttribute("x", "1250");
-            linkText.setAttribute("y", `${1100 + i * 30}`);
+            linkText.setAttribute("y", `${1170 + i * 140}`);
             linkText.setAttribute("text-anchor", "middle");
             linkText.setAttribute("class", "phase2-text-link");
             linkText.setAttribute("data-text", `ballText.${key}.items[${i}]`);
             linkText.textContent = text;
-        
+      
             link.appendChild(linkText);
             textGroup.appendChild(link);
-          } else {
+          } else if (i < 2) {
             const line = document.createElementNS("http://www.w3.org/2000/svg", "text");
             line.setAttribute("x", "1250");
-            line.setAttribute("y", `${1100 + i * 180}`);
+            line.setAttribute("y", `${1170 + i * 140}`);
             line.setAttribute("text-anchor", "middle");
             line.setAttribute("class", "phase2-text-item");
             line.setAttribute("data-text", `ballText.${key}.items[${i}]`);
@@ -414,14 +414,11 @@ function addPhase2Extras(idx) {
             textGroup.appendChild(line);
           }
         });
-        
-
+      
         if (typeof loadTranslations === 'function') {
           const lang = localStorage.getItem('user-lang') || 'en';
           loadTranslations(lang);
         }
-        
-        
       }
 
     });
