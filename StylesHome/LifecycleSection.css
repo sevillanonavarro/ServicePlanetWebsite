@@ -95,8 +95,11 @@ h1 {
 }
 
 .diagram{
-  height: 100%;
-  width: 100%;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;     /* Azul moderno */
 }
 
 @media (max-width: 991px) {
