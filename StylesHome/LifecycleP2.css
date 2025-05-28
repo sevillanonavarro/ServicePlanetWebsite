@@ -137,3 +137,19 @@ font-size: 2px;
 fill: #333;
 }
 
+.phase2-text-title {
+  fill: #00aeef; /* color visible */
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  dominant-baseline: middle;
+}
+
+.phase2-text-item {
+  fill: #000000; /* o blanco si fondo oscuro */
+  font-size: 3vw;
+  margin-top: 10%;
+  font-family: 'Arial', sans-serif;
+  dominant-baseline: middle;
+}
+

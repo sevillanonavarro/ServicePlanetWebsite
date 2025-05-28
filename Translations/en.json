@@ -483,6 +483,10 @@
   "usecasesOverview_salessection_usecase": "SALES",
   "useecasesection_detailservice_tittle_blue": "CASES",
   "useecasesection_detailservice_tittle_normal": "USE",
-  "usesection_usecase": "USE"
+  "usesection_usecase": "USE",
+  "ballText.ball-2-0.title": "Título traducido",
+  "ballText.ball-2-0.items[0]": "Línea 1 traducida",
+  "ballText.ball-2-0.items[1]": "Línea 2 traducida",
+  "ballText.ball-2-0.items[2]": "Línea 3 traducida"
   
 }

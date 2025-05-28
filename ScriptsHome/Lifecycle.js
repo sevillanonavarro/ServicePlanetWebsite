@@ -375,24 +375,36 @@ function addPhase2Extras(idx) {
       const data = ballText[key];
 
       if (data) {
+        // Título
         const titleEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        titleEl.setAttribute("x", "50");
-        titleEl.setAttribute("y", "38"); // Más arriba (antes: 45)
+        titleEl.setAttribute("x", "1250");
+        titleEl.setAttribute("y", "1050");
         titleEl.setAttribute("text-anchor", "middle");
         titleEl.setAttribute("class", "phase2-text-title");
+        titleEl.setAttribute("data-text", `ballText.${key}.title`);
         titleEl.textContent = data.title;
         textGroup.appendChild(titleEl);
 
+        // Items
         data.items.forEach((text, i) => {
           const line = document.createElementNS("http://www.w3.org/2000/svg", "text");
-          line.setAttribute("x", "50");
-          line.setAttribute("y", `${43 + i * 5}`); // Más arriba (antes: 52 + i * 5)
+          line.setAttribute("x", "1250");
+          line.setAttribute("y", `${1100 + i * 30}`);
           line.setAttribute("text-anchor", "middle");
           line.setAttribute("class", "phase2-text-item");
+          line.setAttribute("data-text", `ballText.${key}.items[${i}]`);
           line.textContent = text;
           textGroup.appendChild(line);
         });
+
+        // ⚠️ Llama a la función de traducción para aplicar `data-text`
+        if (typeof loadTranslations === 'function') {
+          const lang = localStorage.getItem('user-lang') || 'en';
+          loadTranslations(lang);
+        }
+        
       }
+
     });
 
     phase2Areas.appendChild(img);
@@ -501,50 +513,3 @@ window.addEventListener('DOMContentLoaded', () => {
   // Trigger hover secuencial al cargar
   triggerSequentialHover(svg, '#zoom-layer', 'zoom-group');
 });
-
-
-function renderPhaseExtras(phaseNumber) {
-  const svg = document.querySelector("#svg-clicker");
-  const group = document.getElementById("lines-group");
-  group.innerHTML = ""; // Limpiar bolas anteriores
-
-  const extras = phase2Extras[phaseNumber] || [];
-
-  extras.forEach(({ id, x, y, href, width, height, selectedHref }) => {
-    const image = document.createElementNS("http://www.w3.org/2000/svg", "image");
-    image.setAttribute("href", href);
-    image.setAttribute("x", x);
-    image.setAttribute("y", y);
-    image.setAttribute("width", width);
-    image.setAttribute("height", height);
-    image.setAttribute("id", id);
-    image.classList.add("lifecycle-ball");
-
-    image.addEventListener("click", () => {
-      showBallDescription(id);
-    });
-
-    group.appendChild(image);
-  });
-}
-
-function showBallDescription(ballId) {
-  const info = ballText[ballId];
-  if (!info) return;
-
-  const descBox = document.getElementById("ball-description");
-  const titleEl = document.getElementById("ball-title");
-  const listEl = document.getElementById("ball-items");
-
-  titleEl.setAttribute("data-text", info.title);
-  listEl.innerHTML = "";
-
-  info.items.forEach((itemKey) => {
-    const li = document.createElement("li");
-    li.setAttribute("data-text", itemKey);
-    listEl.appendChild(li);
-  });
-
-  descBox.style.display = "block";
-  if (typeof translatePage === "function") translatePage();
-}
