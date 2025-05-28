@@ -501,3 +501,50 @@ window.addEventListener('DOMContentLoaded', () => {
   // Trigger hover secuencial al cargar
   triggerSequentialHover(svg, '#zoom-layer', 'zoom-group');
 });
+
+
+function renderPhaseExtras(phaseNumber) {
+  const svg = document.querySelector("#svg-clicker");
+  const group = document.getElementById("lines-group");
+  group.innerHTML = ""; // Limpiar bolas anteriores
+
+  const extras = phase2Extras[phaseNumber] || [];
+
+  extras.forEach(({ id, x, y, href, width, height, selectedHref }) => {
+    const image = document.createElementNS("http://www.w3.org/2000/svg", "image");
+    image.setAttribute("href", href);
+    image.setAttribute("x", x);
+    image.setAttribute("y", y);
+    image.setAttribute("width", width);
+    image.setAttribute("height", height);
+    image.setAttribute("id", id);
+    image.classList.add("lifecycle-ball");
+
+    image.addEventListener("click", () => {
+      showBallDescription(id);
+    });
+
+    group.appendChild(image);
+  });
+}
+
+function showBallDescription(ballId) {
+  const info = ballText[ballId];
+  if (!info) return;
+
+  const descBox = document.getElementById("ball-description");
+  const titleEl = document.getElementById("ball-title");
+  const listEl = document.getElementById("ball-items");
+
+  titleEl.setAttribute("data-text", info.title);
+  listEl.innerHTML = "";
+
+  info.items.forEach((itemKey) => {
+    const li = document.createElement("li");
+    li.setAttribute("data-text", itemKey);
+    listEl.appendChild(li);
+  });
+
+  descBox.style.display = "block";
+  if (typeof translatePage === "function") translatePage();
+}
