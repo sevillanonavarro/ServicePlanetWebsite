@@ -497,6 +497,10 @@
   "usecase_problem": "PROBLEM",
   "usecase_solution": "SOLUTION",
   "usecase_services": "Services",
+
+  "service_contact_get_in_touch": "GET IN TOUCH",
+  "service_contact_contact": "CONTACT",
+  "service_contact_us": "US",
   "ballText.ball-1-0.title": "Título traducido",
   "ballText.ball-1-0.items[0]": "Línea 1 traducida",
   "ballText.ball-1-0.items[1]": "Línea 2 traducida",

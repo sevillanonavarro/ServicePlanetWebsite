@@ -52,6 +52,19 @@ body {
     padding: 0.8rem;
   }
   
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .learn-more-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  
   /* ========== CARD STYLES ========== */
   .service-card {
     border-radius: 12px;
