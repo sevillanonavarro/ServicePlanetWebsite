@@ -40,6 +40,11 @@
     object-fit: cover;
 }
 
+.images-wrapper div {
+    width: 100%;
+}
+
+
 .images-wrapper .d-flex > div {
     flex-grow: 1;
 }

@@ -65,7 +65,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 420px; /* ajustado para evitar cortes */
-    height: auto;
+    height: 100%;
   }
   
   .service-card img {

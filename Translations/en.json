@@ -370,6 +370,15 @@
   "outsourcing_onsite_repair_services.one_liner": "Everything seamlessly connected, instantly smart.",
 
 
+  "rma_handling.brief_intro": "Our Depot External Repairs RMA service offers an efficient and reliable solution for external repair of defective equipment. From diagnosis to replacement, we coordinate the entire process.",
+  "rma_handling.extended_use_case.customer": "Large Enterprise (B2B)",
+  "rma_handling.extended_use_case.problem": "A company receives defective equipment from customers and needs to have it repaired or replaced externally. This process requires accurate diagnosis, fast turnaround times, and reliable service partners.",
+  "rma_handling.extended_use_case.services[0]": "Melissan ITSM",
+  "rma_handling.extended_use_case.services[1]": "Depot External Repair",
+  "rma_handling.extended_use_case.solution": "Our service ensures that the product goes to certified repair partners for expert analysis and processing. From component replacement to full refurbishment, we ensure transparency and efficient handling. Once the repair is complete, the device is returned or replaced, ensuring a smooth and reliable solution for the customer.",
+  "rma_handling.one_liner": "Everything seamlessly connected, instantly smart.",
+
+
   "test_orders.brief_intro": "An online marketplace seller operates in a highly competitive environment where fraudulent listings and counterfeit products are prevalent, threatening customer trust.",
   "test_orders.extended_use_case.customer": "Online marketplace seller (B2B)",
   "test_orders.extended_use_case.problem": "Marketplace sellers are faced with risks of misrepresented products, counterfeiting, and falsely advertised quality. Without independent verification, they can suffer financial losses and reputational damage. A structured process is needed to assess authenticity, functionality, and compliance before products are listed for resale.",
