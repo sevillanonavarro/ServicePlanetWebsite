@@ -35,7 +35,7 @@
 }
 
 .custom-card {
-  min-height: 560px;
+  height: 100%;
 }
 
 @media (max-width: 1199px) {
