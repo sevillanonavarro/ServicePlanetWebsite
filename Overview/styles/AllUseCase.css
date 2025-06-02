@@ -89,11 +89,12 @@
     border-radius: 25px;
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s;
+    transform: translateY(15px);
   }
   
   .button-cases:hover {
     background-color: #0079a1;
-    transform: translateY(-2px);
+    transform: translateY(13px);
   }
   
   .button-cases i {
