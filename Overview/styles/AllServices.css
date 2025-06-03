@@ -7,6 +7,9 @@
     margin-bottom: 30px;
   }
   
+  .text-description{
+    font-size: clamp(1rem, 2vw, 0.8rem);
+  }
   .gradient-text {
     background-image: linear-gradient(118deg, #098da1 50%, #29bdef 100%);
     -webkit-background-clip: text;
@@ -157,7 +160,7 @@
     font-size: 1.3rem;
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    height: 100%; /* Asegura altura completa de columna */
+    height: 420px; /* Asegura altura completa de columna */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,6 +195,7 @@
     width: 100%;
     object-fit: cover;
     height: 100%; /* Asegura altura visual igual que el texto */
+    height: 500px;
     
   }
 

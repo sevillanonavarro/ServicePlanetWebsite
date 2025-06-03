@@ -6,20 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!scrollLeftBtn || !scrollRightBtn || !serviceTabsWrapper || !firstTabButton) return;
 
-
   scrollLeftBtn.addEventListener("click", () => {
-    const firstTabButton = document.querySelector(".tab-button");
-    if (!firstTabButton) return;
     const scrollAmount = firstTabButton.offsetWidth;
     serviceTabsWrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
   });
 
   scrollRightBtn.addEventListener("click", () => {
-    const firstTabButton = document.querySelector(".tab-button");
-    if (!firstTabButton) return;
     const scrollAmount = firstTabButton.offsetWidth;
     serviceTabsWrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
   });
+
+  // Activar por defecto el botón con data-categorie="cyric"
+  const defaultTab = document.querySelector('.tab-button[data-categorie="cyric"]');
+  if (defaultTab) {
+    defaultTab.click();
+  }
 });
 
 document.querySelectorAll('.tab-button').forEach(button => {
@@ -40,4 +41,3 @@ document.querySelectorAll('.tab-button').forEach(button => {
     button.classList.add('tab-activate');
   });
 });
-
