@@ -55,7 +55,8 @@ z`,
 // === Datos con id ya predefinido ===
 const phase2Extras = {
   1: [
-    { id: 'ball-1-0', x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',}
+    { id: 'ball-1-0', x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',},
+    { id: 'ball-1-1', x: 1675, y: 650, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',}
   ],
   2: [
     { id: 'ball-2-0',  x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
@@ -90,6 +91,11 @@ const phase2Extras = {
 const ballText = {
   'ball-1-0': {
     title: 'Título 1-0',
+    items: ['Texto 1A', 'Texto 1B', 'Texto 1C'],
+    link: "Services/Cyric.html"
+  },
+  'ball-1-1': {
+    title: 'Título 1-1',
     items: ['Texto 1A', 'Texto 1B', 'Texto 1C'],
     link: "Services/Cyric.html"
   },
