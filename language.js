@@ -50,11 +50,11 @@ function changeLanguageSelected(selectedLang) {
   const site = document.getElementById('selected_language');
   let text = '';
   switch (selectedLang) {
-    case "en": text = 'English'; break;
-    case "fr": text = 'Français'; break;
+    case "en-US": text = 'English'; break;
+    case "fr-FR": text = 'Français'; break;
     case "de-DE": text = 'Deutsch'; break;
-    case "es": text = 'Español'; break;
-    case "nl": text = 'Nederlands'; break;
+    case "es-ES": text = 'Español'; break;
+    case "nl-NL": text = 'Nederlands'; break;
   }
   site.textContent = text;
 }

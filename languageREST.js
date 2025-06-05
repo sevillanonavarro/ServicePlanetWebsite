@@ -43,19 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const site = document.getElementById('selected_language');
       let text = '';
       switch (selectedLang) {
-        case "en":
+        case "en-US":
           text = 'English';
           break;
-        case "fr":
+        case "fr-FR":
           text = 'Français';
           break;
         case "de-DE":
           text = 'Deutsch';
           break;
-        case "es":
+        case "es-ES":
           text = 'Español';
           break;
-        case "nl":
+        case "nl-NL":
           text = 'Nederlands';
           break;
       }
