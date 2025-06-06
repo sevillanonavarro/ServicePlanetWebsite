@@ -35,11 +35,11 @@
           <i class="bi bi-globe"></i>  <span id="selected_language"></span>
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
-          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="en-US"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr-FR"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
           <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
-          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
-          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
+          <li><a class="lang-option" data-value="es-ES"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl-NL"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
         </ul>
       </div>
     </div>
@@ -106,9 +106,7 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
-          FOR YOUR BUSINESS<br>
-          TECHNOLOGY
+          <span class="highlight, gradient-text" data-text="firstmenu_usecases">USE CASES</span>
         </h1>
       </div>
 
@@ -139,9 +137,9 @@
         </div>
         
         <div>
-          <img src="" alt="logoCompania">
-          <h4><strong data-text="usecasecard_customer">Client: </strong>Bechtle</h4>
-          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="customer_returns.extended_use_case.customer">Large electronics store (B2B2C)</span></p>
+          <!--<img src="" alt="logoCompania">
+          <h4><strong data-text="usecasecard_customer">Client: </strong></h4>-->
+          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="customer_returns.extended_use_case.customer">Online retailer (B2C/B2B2C)</span></p>
         </div>
       </div>
       
@@ -153,7 +151,7 @@
         </div>
         <div>
           <h4><strong data-text="usecase_problem">PROBLEM</strong></h4>
-          <p class="fs-5" data-text="customer_returns.extended_use_case.problem">Customer returns often involve devices that are perfectly operational but require professional treatment before they can be resold. The retailer needs a standardized refurbishment process that ensures these products are cleaned, tested, and prepared for resale to the highest standard. Additionally, all previous data must be securely erased to comply with GDPR regulations, ensuring a seamless transition to their next owner.</p>
+          <p class="fs-5" data-text="customer_returns.extended_use_case.problem">Due to the legal right of withdrawal for online purchases, we process a continuous stream of returns—most of which are nearly new devices. However, GDPR regulations require secure data wiping from all storage media, and many returned products show minor usage marks or have damaged packaging. Historically, these products were sold in bulk to third-party buyers, but this created several challenges: we had no guarantee that customer data was properly erased, exposing us to compliance risks, and the resale value was low due to lack of quality control. The result was a significant cost burden and loss of potential margin, as well as a lack of transparency and traceability in the returns process.</p>
         </div>
       </div>
       
@@ -165,7 +163,7 @@
         </div>
         <div>
           <h4><strong data-text="usecase_solution">SOLUTION</strong></h4>
-          <p class="fs-5" data-text="customer_returns.extended_use_case.solution">Through Refurbishment Renew, returned devices undergo a rigorous renewal process that includes meticulous exterior cleaning, restoring the devices' appearance while preserving the original hardware. Professional testing verifies peak functionality to ensure quality and reliability. Professional treatment and durable processing ensure that each product meets the highest standards of durability and performance. Repackaging and market reintroduction present renewed products in a way that builds consumer trust and confidence. By adopting Refurbishment Renew, the retailer successfully transforms customer returns into valuable inventory ready for resale.</p>
+          <p class="fs-5" data-text="customer_returns.extended_use_case.solution">Service Planet, with its Melissan ERP system, has enabled us to completely transform our returns process. Returned devices are now individually assessed: undamaged products are fully refurbished to “like new” condition, while those with minor defects are restored to maximize residual value at a manageable cost. Using advanced tools, Service Planet efficiently tests and wipes devices with Cyric, and also handles repackaging, labeling, and the production of protective materials. Every step is traceable, ensuring strict GDPR compliance and allowing us to monitor if any devices are returned again in the future. This approach has dramatically reduced costs, improved sustainability, and enabled us to offer these products as new or nearly new—boosting both margin and customer confidence.</p>
         </div>
       </div>
       
@@ -176,10 +174,14 @@
           <img src="../Sources/DetailServiceIcon2.png" alt="Problema" class="img-left">
         </div>
         <div class="mt-4">
-          <h4><strong data-text="usecase_service">Services</strong></h4>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment Renew <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan ITSM <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Product Validation <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <h4><strong data-text="usecase_services">Services</strong></h4>
+          <a href="../Services/MelissanServiceERP.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Service ERP <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/Cyric.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Cyric <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/RefurbishmentRenew.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment Renew <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/MelissanProductVerification.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Product Validation <i class="bi bi-arrow-right ms-5 flecha"></i></a>
           <hr class="my-1">
 
         </div>

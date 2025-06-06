@@ -13,7 +13,7 @@
 
 
   "computer_support.brief_intro": "Retailers increasingly offer technical helpdesk services to support customers and businesses, ensuring smooth operation of their computing environments and reducing unnecessary returns caused by user error or minor issues.",
-  "computer_support.extended_use_case.customer": " Retailers/Resellers providing IT support to end users (B2C/B2B)",
+  "computer_support.extended_use_case.customer": "Retailers/Resellers providing IT support to end users (B2C/B2B)",
   "computer_support.extended_use_case.problem": "Many customers return computers and devices due to issues that could easily be resolved with basic technical support—such as software glitches, configuration errors, or simple user mistakes. These “no fault found” returns result in unnecessary costs, lost sales opportunities, and customer frustration. At the same time, both individuals and business clients often lack the in-house expertise to address more complex technical problems, leading to productivity loss and dissatisfaction.",
   "computer_support.extended_use_case.solution": "By offering a comprehensive Computer Support service, retailers can assist customers through multiple channels—including phone, remote access, and on-site visits. Expert support staff quickly diagnose and resolve issues ranging from simple software problems to advanced hardware repairs. This not only minimizes downtime for the user, but also helps prevent unnecessary product returns by resolving issues before a device is sent back. As a result, retailers enhance customer satisfaction, reduce operational costs, and create a valuable new revenue stream through paid support services.",
   "computer_support.one_liner": "Always help, quickly resolved.",

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Computer Support</title>
+  <title>DOA Handling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -35,11 +35,11 @@
           <i class="bi bi-globe"></i>  <span id="selected_language"></span>
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
-          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="en-US"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr-FR"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
           <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
-          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
-          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
+          <li><a class="lang-option" data-value="es-ES"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl-NL"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
         </ul>
       </div>
     </div>
@@ -106,9 +106,7 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
-          FOR YOUR BUSINESS<br>
-          TECHNOLOGY
+          <span class="highlight, gradient-text" data-text="firstmenu_usecases">USE CASES</span>
         </h1>
       </div>
 
@@ -139,9 +137,9 @@
         </div>
         
         <div>
-          <img src="" alt="logoCompania">
-          <h4><strong data-text="usecasecard_customer">Client: </strong>Bechtle</h4>
-          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="doa_handling.extended_use_case.customer">Large manufacturer (B2B)</span></p>
+          <!--<img src="" alt="logoCompania">
+          <h4><strong data-text="usecasecard_customer">Client: </strong></h4>-->
+          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="doa_handling.extended_use_case.customer">Major vendor (B2B)</span></p>
         </div>
       </div>
       
@@ -153,7 +151,7 @@
         </div>
         <div>
           <h4><strong data-text="usecase_problem">PROBLEM</strong></h4>
-          <p class="fs-5" data-text="doa_handling.extended_use_case.problem">A major manufacturer lets their customer have a computer product shipped as DOA because it is within 30 days of the sale date. The product must be thoroughly tested to verify that it is actually defective before a refund is issued.</p>
+          <p class="fs-5" data-text="doa_handling.extended_use_case.problem">Online resellers benefit from generous return periods and simple return logistics, resulting in a surge of products sent back as DOA within 30 days of sale. In reality, only a small fraction of these returns are truly defective and meet the vendor’s DOA criteria. This has led to a heavily contaminated return stream, with vendors facing unnecessary costs for processing, logistics, and lost product value. Previously, many resellers used the DOA process as a quick way to recover funds, further increasing the volume of non-defective returns and administrative workload.</p>
         </div>
       </div>
       
@@ -165,7 +163,7 @@
         </div>
         <div>
           <h4><strong data-text="usecase_solution">SOLUTION</strong></h4>
-          <p class="fs-5" data-text="doa_handling.extended_use_case.solution">The product is tested and a hardware error is found. The unit is then processed and an RMA is requested from the manufacturer with the results of the test. A credit is issued and reported back to the customer. This process ensures fair and accurate handling of DOA claims.</p>
+          <p class="fs-5" data-text="doa_handling.extended_use_case.solution">Service Planet has implemented a local DOA check in the Benelux to address this challenge. Every returned product is thoroughly tested and physically as well as administratively verified before being accepted as a true DOA. If a hardware defect is confirmed, the product is processed, and an RMA is requested from the vendor, resulting in a credit for the reseller. If the product is not defective or does not meet DOA guidelines, it is refurbished by Service Planet—securely wiped, cleaned, tested, and repackaged—and returned to the reseller for resale. This process has led to significant cost savings for the vendor by preventing the acceptance of fully functional products as DOA. Now, around 60% of returned products are refurbished and sent back, causing resellers to reconsider before submitting a DOA claim. If the DOA is valid, Service Planet will manage the claim and financial handling with all resellers for the vendor. The number of DOA requests has dropped substantially, and the vendor benefits from lower costs, improved process control, and a more sustainable approach to returns.</p>
         </div>
       </div>
       
@@ -176,12 +174,18 @@
           <img src="../Sources/DetailServiceIcon2.png" alt="Problema" class="img-left">
         </div>
         <div class="mt-4">
-          <h4><strong data-text="usecase_service">Services</strong></h4>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Service ERP <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Cyric <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Testing <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Vendor Returns <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Contact Center Support <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <h4><strong data-text="usecase_services">Services</strong></h4>
+          <a href="../Services/MelissanServiceERP.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Service ERP <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/Cyric.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Cyric <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/DepotTesting.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Testing <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/RefurbishmentRenew.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment Renew <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/ContactCenterSupport.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Contact Center Support <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/DepotVendorReturns.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Vendor Returns <i class="bi bi-arrow-right ms-5 flecha"></i></a>
           <hr class="my-1">
 
         </div>

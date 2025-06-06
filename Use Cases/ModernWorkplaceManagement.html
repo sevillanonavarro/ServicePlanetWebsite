@@ -35,11 +35,11 @@
           <i class="bi bi-globe"></i>  <span id="selected_language"></span>
         </a>
         <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdown">
-          <li><a class="lang-option" data-value="en"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
-          <li><a class="lang-option" data-value="fr"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
+          <li><a class="lang-option" data-value="en-US"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"><div data-text="language_english"></div></a></li>
+          <li><a class="lang-option" data-value="fr-FR"><img src="https://flagcdn.com/w20/fr.png" alt="French flag"><div data-text="language_french"></div> </a></li>
           <li><a class="lang-option" data-value="de-DE"><img src="https://flagcdn.com/w20/de.png" alt="German flag"><div data-text="language_german"></div></a></li>
-          <li><a class="lang-option" data-value="es"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
-          <li><a class="lang-option" data-value="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
+          <li><a class="lang-option" data-value="es-ES"><img src="https://flagcdn.com/w20/es.png" alt="Spanish flag"><div data-text="language_spanish"></div></a></li>
+          <li><a class="lang-option" data-value="nl-NL"><img src="https://flagcdn.com/w20/nl.png" alt="Dutch flag"><div data-text="language_dutch"></div></a></li>
         </ul>
       </div>
     </div>
@@ -106,9 +106,7 @@
           <div class="line d-md-block d-none"></div>
         </div>
         <h1 class="fw-bold mb-4">
-          <span class="highlight, gradient-text" data-text="headertext_home_blue">FAST SOLUTIONS</span><br>
-          FOR YOUR BUSINESS<br>
-          TECHNOLOGY
+          <span class="highlight, gradient-text" data-text="firstmenu_usecases">USE CASES</span>
         </h1>
       </div>
 
@@ -139,9 +137,9 @@
         </div>
         
         <div>
-          <img src="" alt="logoCompania">
-          <h4><strong data-text="usecasecard_customer">Client: </strong>Bechtle</h4>
-          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="modern_workplace_management.extended_use_case.customer">Large organization (B2B)</span></p>
+          <!--<img src="" alt="logoCompania">
+          <h4><strong data-text="usecasecard_customer">Client: </strong></h4>-->
+          <p class="fs-5"><strong data-text="usecasecard_typesetup">Type of Setup</strong> <span data-text="modern_workplace_management.extended_use_case.customer">Vendor and wholesaler partnership (B2B)</span></p>
         </div>
       </div>
       
@@ -153,7 +151,7 @@
         </div>
         <div>
           <h4><strong data-text="usecase_problem">PROBLEM</strong></h4>
-          <p class="fs-5" data-text="modern_workplace_management.extended_use_case.problem">Organizations often struggle to provide employees with secure, up-to-date devices that are ready to use right out of the box, whether they're in the office or working remotely. Manual setup and configuration takes up valuable IT time, leads to inconsistent experiences, and causes delays for end users. When devices break, repairs can be slow, and asset tracking is often incomplete, resulting in unnecessary downtime and frustration.</p>
+          <p class="fs-5" data-text="modern_workplace_management.extended_use_case.problem">While the vendor excels at designing and marketing commercial hardware like notebooks and desktops, and the wholesaler manages inventory and initial large-scale rollouts, both parties lack the operational engine to deliver true end-to-end workplace management. Essential processes such as onboarding, offboarding, incident management, and device lifecycle services—including repairs, secure data wiping, reboxing, and cleaning—require specialized ITSM tooling, experienced service staff, and integration with platforms like Microsoft Azure. Without these capabilities, devices are not consistently prepared, tracked, or supported, leading to delays, inconsistent user experiences, and higher operational costs. Customers are left with fragmented support, incomplete asset tracking, and slow resolution of defects or returns.</p>
         </div>
       </div>
       
@@ -165,7 +163,8 @@
         </div>
         <div>
           <h4><strong data-text="usecase_solution">SOLUTION</strong></h4>
-          <p class="fs-5" data-text="modern_workplace_management.extended_use_case.solution">Modern Workplace Management automates device preparation, ensures that every laptop or PC is fully updated, configured and enrolled before delivery. Devices are centrally tracked and quickly repaired or replaced if necessary. Downtime is minimized. This streamlined approach reduces IT workload and gives employees a seamless, worry-free digital experience.</p>
+          <p class="fs-5" data-text="modern_workplace_management.extended_use_case.solution[0]">Service Planet fills this operational gap as a specialized partner, providing the expertise, technology, and workforce needed for comprehensive workplace management. Using advanced tools like Cyric for automated device preparation and Melissan for ITSM, asset management, and workflow automation, Service Planet ensures every device is fully updated, configured, and enrolled before delivery. Devices are centrally tracked, and any incident—such as a defect or user change—is managed through a seamless process that includes rapid repair or replacement, secure data erasure, and professional refurbishment or recycling. First- and second-line helpdesk support is delivered by certified staff with Microsoft Azure expertise, ensuring a consistent and worry-free digital experience for end users.</p>
+          <p class="fs-5" data-text="modern_workplace_management.extended_use_case.solution[1]">A key differentiator is the integration with HP’s telemetry solutions, including HP Proactive Insights and the HP Workforce Experience Platform (WXP). Through a direct data connection with Melissan, telemetry data from HP devices is continuously monitored and analyzed, providing real-time insights into device health, performance, and user experience. This enables predictive maintenance, proactive incident management, and automated recommendations for remediation—helping to prevent issues before they impact employees. IT teams gain access to customizable dashboards, fleet analytics, and employee sentiment data, ensuring optimal device uptime and a superior digital workplace experience.This integrated approach reduces the IT workload for both vendor and wholesaler, increases efficiency, and guarantees that clients receive a truly modern, secure, and scalable workplace solution.</p>
         </div>
       </div>
       
@@ -176,14 +175,27 @@
           <img src="../Sources/DetailServiceIcon2.png" alt="Problema" class="img-left">
         </div>
         <div class="mt-4">
-          <h4><strong data-text="usecase_service">Services</strong></h4>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Cyric <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Repair <i class="bi bi-arrow-right ms-5 flecha"></i></a>
-          <a href="#" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Contact Center <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <h4><strong data-text="usecase_services">Services</strong></h4>
+          <a href="../Services/MelissanServiceERP.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Service ERP <i class="bi bi-arrow-right ms-5 flecha"></i></a>
           <hr class="my-1">
-
+          <a href="../Services/MelissanDataDrivenServiceInsights.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan Data Driven Service Insights <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/MelissanITAD.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan ITAD <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/MelissanITSM.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Melissan ITSM <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/Cyric.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Cyric <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/DepotSwap.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Swap <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/DepotRepair.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Depot Repair <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/RefurbishmentRenew.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment Renew <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/RefurbishmentRecycling.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Refurbishment Recycling <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
+          <a href="../Services/ContactCenterSupport.html" class="service-link mb-1 d-flex justify-content-between align-items-center fs-5"> Contact Center Support <i class="bi bi-arrow-right ms-5 flecha"></i></a>
+          <hr class="my-1">
         </div>
       </div>
     </div>

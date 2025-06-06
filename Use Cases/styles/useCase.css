@@ -57,9 +57,9 @@
     content: "";
     position: absolute;
     top: 120px;
-    bottom: 90px;
+    bottom: 12%;
     left: 90px;
-    width: 1.5px;
+    width: 1px;
     background-color: #8a8a8a;
     z-index: 0;
   }

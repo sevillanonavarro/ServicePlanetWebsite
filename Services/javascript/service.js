@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (index === 0) button.classList.add('active');
 
       button.addEventListener('click', () => {
-        const slideWidth = 60; // 65 Lo deja exacto
+        const slideWidth = 63; // 65 Lo deja exacto
         const maxTranslate = (slides.length - 1) * slideWidth;
         const translate = Math.min(index * slideWidth, maxTranslate);
         slider.style.transform = `translateX(-${translate}%)`;
