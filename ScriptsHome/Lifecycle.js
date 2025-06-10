@@ -56,35 +56,54 @@ z`,
 const phase2Extras = {
   1: [
     { id: 'ball-1-0', x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',},
-    { id: 'ball-1-1', x: 1675, y: 650, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',}
+    { id: 'ball-1-1', x: 550, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',},
+    { id: 'ball-1-2', x: 1600, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',},
+    { id: 'ball-1-3', x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',},
+    { id: 'ball-1-4', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png',}
   ],
   2: [
-    { id: 'ball-2-0',  x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-2-0',  x: 1100, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-2-1', x: 550, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-2-1', x: 650, y: 650, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-2-2', x: 1600, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-2-2', x: 1600, y: 650, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-2-3', x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-2-3', x: 500, y: 1050, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-2-4', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-2-4', x: 1780, y: 1050, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-2-5', x: 1650, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-2-6', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-2-7', x: 850, y: 1720, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-2-8', x: 1350, y: 1720, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
   ],
   3: [
-    { id: 'ball-3-0',  x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-3-0',  x: 810, y: 550, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-3-1', x: 550, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-3-1', x: 1390, y: 550, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-3-2', x: 1600, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-3-2', x: 530, y: 900, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-3-3',  x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-3-3',  x: 1730, y: 900, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
 
-    { id: 'ball-3-4', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-3-4', x: 530, y: 1350, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-3-5', x: 1730, y: 1350, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-3-6',  x: 810, y: 1700, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
+
+    { id: 'ball-3-7', x: 1390, y: 1700, href: './Sources/LifecycleExtras/1A.png', width: 250, height: 250, selectedHref: './Sources/LifecycleExtras/1B.png', },
     
   ],
   4: [
     { id: 'ball-4-0',  x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
-    { id: 'ball-4-1', x: 1650, y: 1350, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
-    { id: 'ball-4-2', x: 500, y: 1350, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-4-1', x: 550, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-4-2', x: 1600, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-4-0',  x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-4-1', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', }
   ],
 };
 
