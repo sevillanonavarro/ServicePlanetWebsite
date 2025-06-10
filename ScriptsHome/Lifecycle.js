@@ -102,41 +102,170 @@ const phase2Extras = {
     { id: 'ball-4-0',  x: 1075, y: 450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
     { id: 'ball-4-1', x: 550, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
     { id: 'ball-4-2', x: 1600, y: 800, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
-    { id: 'ball-4-0',  x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
-    { id: 'ball-4-1', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', }
+    { id: 'ball-4-3',  x: 1550, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', },
+    { id: 'ball-4-4', x: 600, y: 1450, href: './Sources/LifecycleExtras/1A.png', width: 350, height: 350, selectedHref: './Sources/LifecycleExtras/1B.png', }
   ],
 };
 
 const ballText = {
   'ball-1-0': {
-    title: 'Título 1-0',
-    items: ['Texto 1A', 'Texto 1B', 'Texto 1C'],
-    link: "Services/Cyric.html"
+    title: 'Modern workplace management',
+    items: ['Safe, up-to-date devices, ready for immediate use.','Learn More'],
+    link: "Use Cases/ModernWorkplaceManagement.html"
   },
   'ball-1-1': {
-    title: 'Título 1-1',
-    items: ['Texto 1A', 'Texto 1B', 'Texto 1C'],
-    link: "Services/Cyric.html"
+    title: 'Computer Support',
+    items: ['Always help, quickly resolved.','Learn More'],
+    link: "Use Cases/ComputerSupport.html"
+  },
+  'ball-1-2': {
+    title: 'Drone Depot External Repair',
+    items: ['Smart triage, fair costs—your drone repairs streamlined and under control.','Learn More'],
+    link: "Use Cases/DroneDepotExternalRepair.html"
+
+  },
+  'ball-1-3': {
+    title: 'Offering Technical Services',
+    items: ['Your In-Store Tech Desk—Repairs, Support, and Solutions in One Stop.','Learn More'],
+    link: "Use Cases/OfferingTechnicalservices.html"
+
+  },
+  'ball-1-4': {
+    title: 'Working Without Downtime',
+    items: ['Seamless productivity, zero downtime—IT that works wherever you do.','Learn More'],
+    link: "Use Cases/WorkingWithoutDowntime.html"
+
   },
   'ball-2-0': {
-    title: 'Título 2-0',
-    items: ['Texto 2A', 'Texto 2B', 'Texto 2C']
+    title: 'Break Fix Services',
+    items: ['Fast repair, minimal downtime.','Learn More'],
+    link: "Use Cases/BreakFixService.html"
+
   },
   'ball-2-1': {
-    title: 'Título 2-1',
-    items: ['Texto 2-1A', 'Texto 2-1B', 'Texto 2-1C']
+    title: 'Education Worksplace Management',
+    items: ['Always operational, without interruptions.','Learn More'],
+    link: "Use Cases/EducationalWorksplaceManagement.html"
+
   },
   'ball-2-2': {
-    title: 'Título 2-2',
-    items: ['Texto 2-2A', 'Texto 2-2B', 'Texto 2-2C']
+    title: 'Computer Support',
+    items: ['Always help, quickly resolved.','Learn More'],
+    link: "Use Cases/ComputerSupport.html"
+
   },
   'ball-2-3': {
-    title: 'Título 2-3',
-    items: ['Texto 2-3A', 'Texto 2-3B', 'Texto 2-3C']
+    title: 'Onsite TV Repair',
+    items: ['On-site repair, no hassle.','Learn More'],
+    link: "Use Cases/OnsiteTVRepair.html"
+
   },
   'ball-2-4': {
-    title: 'Título 2-4',
-    items: ['Texto 2-4A', 'Texto 2-4B', 'Texto 2-4C']
+    title: 'Computer Repair At Home',
+    items: ['Expert Repairs, Right at Your Door.','Learn More'],
+    link: "Use Cases/ComputerRepairAtHome.html"
+
+  },
+  'ball-2-5': {
+    title: 'Outsourcing Onsite Repair',
+    items: ['One Call, All Repairs—Seamless, Fast, and Worry-Free Onsite Service.','Learn More'],
+    link: "Use Cases/OutsorcingOnsite.html"
+
+  },
+  'ball-2-6': {
+    title: 'RMA Handling',
+    items: ['Coordinated Repairs, Transparent Service.','Learn More'],
+    link: "Use Cases/RMAHandling.html"
+
+  },
+  'ball-2-7': {
+    title: 'Drone Depot External Repair',
+    items: ['Smart triage, fair costs—your drone repairs streamlined and under control.','Learn More'],
+    link: "Use Cases/DroneDepotExternalRepair.html"
+
+  },
+  'ball-2-8': {
+    title: 'Enhancing Quality With Depot Queality Assurance',
+    items: ['Quality checked, stress tested, spotless—repaired right the first time.','Learn More'],
+    link: "Use Cases/EnhancingQualityWithDepotQuealityAssurance.html"
+
+  },
+  'ball-3-0': {
+    title: 'Modern workplace management',
+    items: ['Safe, up-to-date devices, ready for immediate use.','Learn More'],
+    link: "Use Cases/ModernWorkplaceManagement.html"
+  },
+  'ball-3-1': {
+    title: 'Customer Return',
+    items: ['Quality guaranteed, quickly resold.','Learn More'],
+    link: "Use Cases/CustomerReturn.html"
+
+  },
+  'ball-3-2': {
+    title: 'Onsite Installation Configuration',
+    items: ['Perfectly tuned, ready for immediate use.','Learn More'],
+    link: "Use Cases/OnsiteInstallationConfiguration.html"
+
+  },
+  'ball-3-3': {
+    title: 'DOA Handling',
+    items: ['Reliable test, correct reimbursement.','Learn More'],
+    link: "Use Cases/DOAHandling.html"
+
+  },
+  'ball-3-4': {
+    title: 'Test Orders',
+    items: ['Verify authenticity, prevent risks.','Learn More'],
+    link: "Use Cases/TestOrders.html"
+
+  },
+  'ball-3-5': {
+    title: 'Smart Home Installation',
+    items: ['Everything seamlessly connected, instantly smart.','Learn More'],
+    link: "Use Cases/SmartHomeInstallation.html"
+
+  },
+  'ball-3-6': {
+    title: 'Offering Technical services',
+    items: ['Your In-Store Tech Desk—Repairs, Support, and Solutions in One Stop.','Learn More'],
+    link: "Use Cases/OfferingTechnicalservices.html"
+
+  },
+  'ball-3-7': {
+    title: 'Working Without Downtime',
+    items: ['Seamless productivity, zero downtime—IT that works wherever you do.','Learn More'],
+    link: "Use Cases/WorkingWithoutDowntime.html"
+
+  },
+  'ball-4-0': {
+    title: 'Modern workplace management',
+    items: ['Safe, up-to-date devices, ready for immediate use.','Learn More'],
+    link: "Use Cases/BreakFixService.html"
+
+  },
+  'ball-4-1': {
+    title: 'Pc Ready',
+    items: ['Pre-installed, tested and ready to use.','Learn More'],
+    link: "Use Cases/PcReady.html"
+
+  },
+  'ball-4-2': {
+    title: 'Printer Pack',
+    items: ['Easy to configure, ready to print right away.','Learn More'],
+    link: "Use Cases/PrinterPack.html"
+
+  },
+  'ball-4-3': {
+    title: 'Offering Technical services',
+    items: ['Your In-Store Tech Desk—Repairs, Support, and Solutions in One Stop.','Learn More'],
+    link: "Use Cases/OfferingTechnicalservices.html"
+
+  },
+  'ball-4-4': {
+    title: 'Working Without Downtime',
+    items: ['Seamless productivity, zero downtime—IT that works wherever you do.','Learn More'],
+    link: "Use Cases/WorkingWithoutDowntime.html"
+
   },
   // Agrega los demás según necesites...
 };
@@ -413,7 +542,7 @@ function addPhase2Extras(idx) {
       
         // Mostrar solo los dos primeros textos como normales y el tercero como enlace si hay
         data.items.forEach((text, i) => {
-          if (i === 2 && data.link) {
+          if (i === 1 && data.link) {
             const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
             link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", data.link);
             link.setAttribute("target", "_blank");
@@ -423,12 +552,12 @@ function addPhase2Extras(idx) {
             linkText.setAttribute("y", `${1170 + i * 140}`);
             linkText.setAttribute("text-anchor", "middle");
             linkText.setAttribute("class", "phase2-text-link");
-            linkText.setAttribute("data-text", `ballText.${key}.items[${i}]`);
+            linkText.setAttribute("data-text", "button_learnmore");
             linkText.textContent = text;
       
             link.appendChild(linkText);
             textGroup.appendChild(link);
-          } else if (i < 2) {
+          } else if (i < 1) {
             const line = document.createElementNS("http://www.w3.org/2000/svg", "text");
             line.setAttribute("x", "1250");
             line.setAttribute("y", `${1170 + i * 140}`);

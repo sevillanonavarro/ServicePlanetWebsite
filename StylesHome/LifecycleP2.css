@@ -126,12 +126,6 @@ transform-origin: center center;
 cursor: pointer;
 }
 
-.phase2-text-title {
-font-size: 3px;
-font-weight: bold;
-fill: black;
-}
-
 .phase2-text-item {
 font-size: 2px;
 fill: #333;
@@ -139,7 +133,7 @@ fill: #333;
 
 .phase2-text-title {
   fill: #00aeef; /* color visible */
-  font-size: 4vw;
+  font-size: 67px;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
   dominant-baseline: middle;
@@ -147,7 +141,7 @@ fill: #333;
 
 .phase2-text-item {
   fill: #000000; /* o blanco si fondo oscuro */
-  font-size: 3vw;
+  font-size: 50px;
   margin-top: 10%;
   font-family: 'Arial', sans-serif;
   dominant-baseline: middle;
@@ -155,7 +149,7 @@ fill: #333;
 
 .phase2-text-link {
   fill: #007bff;
-  font-size: 3vw;
+  font-size: 40px;
   font-family: 'Arial', sans-serif;
   text-decoration: underline;
   cursor: pointer;

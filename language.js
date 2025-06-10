@@ -26,7 +26,7 @@ function applyTranslations(translations) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const LANG_KEY = 'user-lang';
-  let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+  let currentLang = localStorage.getItem(LANG_KEY) || 'en-US';
 
   // ✅ Carga inicial
   window.loadTranslations(currentLang);

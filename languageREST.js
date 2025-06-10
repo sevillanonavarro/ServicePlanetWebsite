@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const LANG_KEY = 'user-lang';
-    let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+    let currentLang = localStorage.getItem(LANG_KEY) || 'en-US';
     // Función que carga el JSON y traduce la página
     function loadTranslations(lang) {
       fetch(`../Translations/${lang}.json`)
